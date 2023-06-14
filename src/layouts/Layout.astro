@@ -1,6 +1,7 @@
 ---
 import '@fontsource/righteous';
 import '@fontsource-variable/red-hat-display';
+import Navbar from '../components/Navbar';
 export interface Props {
   title: string;
 }
@@ -19,8 +20,9 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body
-    class="font-red-hat-display-variable bg-alabaster-500 border-8 border-vermilion-500 text-jet-500 dark:bg-jet-600 dark:text-alabaster-500"
+    class="font-red-hat-display-variable bg-alabaster-500 border-8 border-vermilion-500 text-jet-500 dark:bg-jet-500 dark:text-alabaster-500"
   >
+    <Navbar client:only />
     <slot />
   </body>
 </html>
