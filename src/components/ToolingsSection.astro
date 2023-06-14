@@ -1,0 +1,67 @@
+---
+import { Icon } from 'astro-icon';
+
+type Tech = {
+  name: string;
+  icon: string;
+};
+
+const technologies: Tech[] = [
+  {
+    name: 'JavaScript',
+    icon: 'simple-icons:javascript',
+  },
+  {
+    name: 'TypeScript',
+    icon: 'cib:typescript',
+  },
+  {
+    name: 'React',
+    icon: 'akar-icons:react-fill',
+  },
+  {
+    name: 'Redux',
+    icon: 'akar-icons:redux-fill',
+  },
+  {
+    name: 'SASS',
+    icon: 'akar-icons:sass-fill',
+  },
+  {
+    name: 'Bootstrap',
+    icon: 'akar-icons:bootstrap-fill',
+  },
+  {
+    name: 'Styled Components',
+    icon: 'simple-icons:styledcomponents',
+  },
+  {
+    name: 'Tailwind CSS',
+    icon: 'mdi:tailwind',
+  },
+  {
+    name: 'Git',
+    icon: 'bi:git',
+  },
+];
+---
+
+<section class="mb-16">
+  <h3
+    class="w-fit mb-8 font-righteous text-3xl mx-auto border-b-4 border-vermilion-500"
+  >
+    Toolings
+  </h3>
+  <div class="grid grid-cols-3 mx-5 gap-y-6 gap-x-4">
+    {
+      technologies.map((tech) => (
+        <div class="flex flex-col items-center">
+          <div class="p-5 rounded-full w-fit text-jet-500 bg-white dark:text-alabaster-500 dark:bg-alabaster-500">
+            <Icon name={tech.icon} class="w-10 dark:text-jet-500" />
+          </div>
+          <p class="font-light mt-2 text-center leading-5">{tech.name}</p>
+        </div>
+      ))
+    }
+  </div>
+</section>
