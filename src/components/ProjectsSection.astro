@@ -1,0 +1,97 @@
+---
+import Icon from 'astro-icon';
+import ImageSlider from './ImageSlider';
+
+type Project = {
+  title: string;
+  tags: string[];
+  description: string;
+  demo: string;
+  repo: string;
+  images: string[];
+};
+
+const projects: Project[] = [
+  {
+    title: 'HowTo',
+    tags: ['TypeScript', 'React', 'Redux Toolkit', 'Tailwind CSS', 'Firebase'],
+    description:
+      'A SPA website which lets users to discover and craft unique step-by-step tutorials. Designed and developed from scratch without any guidance in 8 one week sprints.',
+    demo: 'https://howto-creative.web.app/',
+    repo: 'https://github.com/KellyCHI22/HowTo',
+    images: [
+      '/public/mockup_howto_1.jpg',
+      '/public/mockup_howto_mobile.png',
+      '/public/howto_demo_1.gif',
+      '/public/howto_demo_3.gif',
+    ],
+  },
+  {
+    title: 'Alpha Twitter',
+    tags: ['React', 'React Router', 'Axios', 'Styled Components', 'REST API'],
+    description:
+      'A collaborative simple Twitter clone with front-end, back-end trainees at Alpha Camp. Completed within 2 weeks using Agile development methodology.',
+    demo: 'https://weilocus.github.io/twitter/',
+    repo: 'https://github.com/KellyCHI22/twitter',
+    images: [
+      '/public/mockup_alpha_twitter_1.jpg',
+      '/public/mockup_alpha_twitter_mobile.jpg',
+      '/public/tweet-demo.gif',
+      '/public/reply-demo.gif',
+    ],
+  },
+];
+---
+
+<section id="projects" class="pt-24 mb-16 mx-7">
+  <h3
+    class="w-fit mb-8 font-righteous text-3xl mx-auto border-b-4 border-vermilion-500"
+  >
+    Projects
+  </h3>
+  <div class="space-y-12">
+    {
+      projects.map((project) => (
+        <div class="space-y-2">
+          <div>
+            <ImageSlider client:visible imagesData={project.images} />
+          </div>
+          <h4 class="font-righteous text-[1.75rem] pt-2">{project.title}</h4>
+          <div class="flex flex-wrap gap-2">
+            {project.tags.map((tag) => (
+              <span class="border border-vermilion-500 rounded-full text-vermilion-500 py-[0.15rem] px-2 text-sm">
+                {tag}
+              </span>
+            ))}
+          </div>
+          <p class="py-3">{project.description}</p>
+          <div class="flex gap-1 flex-wrap">
+            <a
+              href={project.demo}
+              target="_blank"
+              class="bg-jet-500 text-alabaster-500 flex items-center p-2 px-3 gap-2"
+            >
+              <Icon name="mdi:eye" class="inline w-5" /> <span>Demo</span>
+            </a>
+            <a
+              href={project.repo}
+              target="_blank"
+              class="bg-jet-500 text-alabaster-500 flex items-center p-2 px-3 gap-2"
+            >
+              <>
+                <Icon name="mdi:github" class="inline w-5" />
+                <span>Repo</span>
+              </>
+            </a>
+            <button class="border-jet-500 border flex items-center p-2 px-3 gap-2">
+              <>
+                <Icon name="ph:plus-bold" class="inline w-5" />
+                <span>More</span>
+              </>
+            </button>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>
