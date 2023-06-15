@@ -43,7 +43,7 @@ const projects: Project[] = [
 
 <section id="projects" class="pt-24 mb-16 mx-7">
   <h3
-    class="w-fit mb-8 font-righteous text-3xl mx-auto border-b-4 border-vermilion-500"
+    class="w-fit mb-8 font-righteous text-3xl mx-auto border-b-4 border-vermilion-500 dark:border-asparagus-500"
   >
     Projects
   </h3>
@@ -57,7 +57,7 @@ const projects: Project[] = [
           <h4 class="font-righteous text-[1.75rem] pt-2">{project.title}</h4>
           <div class="flex flex-wrap gap-2">
             {project.tags.map((tag) => (
-              <span class="border border-vermilion-500 rounded-full text-vermilion-500 py-[0.15rem] px-2 text-sm ">
+              <span class="border border-vermilion-500 rounded-full text-vermilion-500 py-[0.15rem] px-2 text-sm dark:text-asparagus-400 dark:border-asparagus-400">
                 {tag}
               </span>
             ))}
@@ -67,21 +67,21 @@ const projects: Project[] = [
             <a
               href={project.demo}
               target="_blank"
-              class="bg-jet-500 text-alabaster-500 flex items-center p-2 px-3 gap-2 hover:bg-jet-400 dark:bg-alabaster-500 dark:text-jet-500 dark:hover:bg-alabaster-600"
+              class="bg-jet-500 text-pearl-bush-500 flex items-center p-2 px-3 gap-2 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
             >
               <Icon name="mdi:eye" class="inline w-5" /> <span>Demo</span>
             </a>
             <a
               href={project.repo}
               target="_blank"
-              class="bg-jet-500 text-alabaster-500 flex items-center p-2 px-3 gap-2 hover:bg-jet-400 dark:bg-alabaster-500 dark:text-jet-500 dark:hover:bg-alabaster-600"
+              class="bg-jet-500 text-pearl-bush-500 flex items-center p-2 px-3 gap-2 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
             >
               <>
                 <Icon name="mdi:github" class="inline w-5" />
                 <span>Repo</span>
               </>
             </a>
-            <button class="border-jet-500 border flex items-center p-2 px-3 gap-2 dark:border-alabaster-500 dark:hover:bg-jet-400 hover:bg-jet-100">
+            <button class="border-jet-500 border flex items-center p-2 px-3 gap-2 dark:border-pearl-bush-500 dark:hover:bg-jet-400 hover:bg-jet-100">
               <>
                 <Icon name="ph:plus-bold" class="inline w-5" />
                 <span>More</span>

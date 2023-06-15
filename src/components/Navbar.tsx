@@ -19,10 +19,11 @@ export default function Navbar() {
 
       <nav
         className={clsx(
-          'fixed bg-alabaster-500  dark:bg-jet-500 dark:text-alabaster-500 z-20',
+          'fixed bg-pearl-bush-500  dark:bg-jet-500 dark:text-pearl-bush-500 z-20',
           {
-            'border-8 border-vermilion-500 top-0 left-0 w-screen': showMenu,
-            'border-t-8 top-0 border-vermilion-500 left-[8px] w-[calc(100vw-16px)]':
+            'border-8 border-vermilion-500 top-0 left-0 w-screen dark:border-asparagus-500':
+              showMenu,
+            'border-t-8 top-0 border-vermilion-500 dark:border-asparagus-500 left-[8px] w-[calc(100vw-16px)]':
               !showMenu,
           }
         )}
@@ -51,9 +52,9 @@ export default function Navbar() {
                 <li onClick={handleShowMenu}>
                   <a
                     href="#"
-                    className="font-semibold border-b-4 border-alabaster-500 hover:border-vermilion-500
+                    className="font-semibold border-b-4 border-pearl-bush-500 hover:border-vermilion-500
                   dark:border-jet-500
-                  dark:hover:border-vermilion-500"
+                  dark:hover:border-asparagus-500"
                   >
                     Home
                   </a>
@@ -61,8 +62,8 @@ export default function Navbar() {
                 <li onClick={handleShowMenu}>
                   <a
                     href="#projects"
-                    className="font-semibold border-b-4 border-alabaster-500 hover:border-vermilion-500 dark:border-jet-500
-                  dark:hover:border-vermilion-500"
+                    className="font-semibold border-b-4 border-pearl-bush-500 hover:border-vermilion-500 dark:border-jet-500
+                  dark:hover:border-asparagus-500"
                   >
                     Projects
                   </a>
@@ -70,8 +71,8 @@ export default function Navbar() {
                 <li onClick={handleShowMenu}>
                   <a
                     href="#resume"
-                    className="font-semibold border-b-4 border-alabaster-500 hover:border-vermilion-500 dark:border-jet-500
-                  dark:hover:border-vermilion-500"
+                    className="font-semibold border-b-4 border-pearl-bush-500 hover:border-vermilion-500 dark:border-jet-500
+                  dark:hover:border-asparagus-500"
                   >
                     Resume
                   </a>
@@ -79,8 +80,8 @@ export default function Navbar() {
                 <li onClick={handleShowMenu}>
                   <a
                     href="#contact"
-                    className="font-semibold border-b-4 border-alabaster-500 hover:border-vermilion-500 dark:border-jet-500
-                  dark:hover:border-vermilion-500"
+                    className="font-semibold border-b-4 border-pearl-bush-500 hover:border-vermilion-500 dark:border-jet-500
+                  dark:hover:border-asparagus-500"
                   >
                     Contact
                   </a>

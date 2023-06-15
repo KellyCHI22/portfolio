@@ -37,7 +37,7 @@ export default function ImageSlider({ imagesData }: { imagesData: string[] }) {
         </div>
       </div>
       <button
-        className="p-[0.5] bg-jet-500 text-alabaster-500 rounded-full absolute left-2 top-[40%] grid place-items-center opacity-70 hover:opacity-100"
+        className="p-[0.5] bg-jet-500 text-pearl-bush-500 rounded-full absolute left-2 top-[40%] grid place-items-center opacity-70 hover:opacity-100"
         onClick={prevSlide}
       >
         <img
@@ -49,7 +49,7 @@ export default function ImageSlider({ imagesData }: { imagesData: string[] }) {
         {/* <IoIosArrowBack className="text-2xl" /> */}
       </button>
       <button
-        className="p-[0.5] bg-jet-500 text-alabaster-500 rounded-full absolute right-2 top-[40%] grid place-items-center opacity-70 hover:opacity-100"
+        className="p-[0.5] bg-jet-500 text-pearl-bush-500 rounded-full absolute right-2 top-[40%] grid place-items-center opacity-70 hover:opacity-100"
         onClick={nextSlide}
       >
         <img
