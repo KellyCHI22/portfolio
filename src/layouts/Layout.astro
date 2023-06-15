@@ -17,9 +17,6 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/logo-light.svg" />
     <meta name="generator" content={Astro.generator} />
-    <script
-      type="text/javascript"
-      src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <title>{title}</title>
   </head>
   <body
@@ -27,8 +24,8 @@ const { title } = Astro.props;
   >
     <Navbar client:only />
     <slot />
-    <footer class="p-5 bg-vermilion-500 text-center text-alabaster-500">
-      Designed with Figma and built with Astro <br /> @ Kelly CHI 2023
+    <footer class="pt-3 pb-2 bg-vermilion-500 text-center text-alabaster-500">
+      Designed in Figma and built with Astro <br /> @ Kelly CHI 2023
     </footer>
   </body>
 </html>

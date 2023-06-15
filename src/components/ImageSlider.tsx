@@ -68,7 +68,7 @@ export default function ImageSlider({ imagesData }: { imagesData: string[] }) {
               className={clsx(
                 'w-4 h-1 rounded-full bg-jet-200 dark:bg-jet-400',
                 {
-                  'bg-jet-500 dark:bg-jet-100': current === index,
+                  'bg-jet-500 dark:bg-white': current === index,
                 }
               )}
             />
