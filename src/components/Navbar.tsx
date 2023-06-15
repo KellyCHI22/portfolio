@@ -11,15 +11,16 @@ export default function Navbar() {
   return (
     <>
       {showMenu && (
-        <div className="backdrop-blur w-screen h-screen absolute top-0 left-0" />
+        <div className="backdrop-blur w-screen h-screen fixed top-0 left-0 z-10" />
       )}
 
       <nav
         className={clsx(
-          'fixed bg-alabaster-500  dark:bg-jet-500 dark:text-alabaster-500',
+          'fixed bg-alabaster-500  dark:bg-jet-500 dark:text-alabaster-500 z-20',
           {
             'border-8 border-vermilion-500 top-0 left-0 w-screen': showMenu,
-            'top-[8px] left-[8px] w-[calc(100vw-16px)]': !showMenu,
+            'border-t-8 top-0 border-vermilion-500 left-[8px] w-[calc(100vw-16px)]':
+              !showMenu,
           }
         )}
       >
@@ -53,7 +54,7 @@ export default function Navbar() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#projects"
                     className="font-semibold border-b-4 border-alabaster-500 hover:border-vermilion-500 dark:border-jet-500
                   dark:hover:border-vermilion-500"
                   >
