@@ -1,12 +1,7 @@
 import clsx from 'clsx';
 import { useState } from 'react';
-import { RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri';
-
-// const imagesData = [
-//   '/public/mockup_alpha_twitter_1.jpg',
-//   '/public/mockup_howto_1.jpg',
-//   '/public/monday_blue.jpg',
-// ];
+import pkg from 'react-icons/ri';
+const { RiArrowLeftSLine, RiArrowRightSLine } = pkg;
 
 export default function ImageSlider({ imagesData }: { imagesData: string[] }) {
   const [current, setCurrent] = useState(0);

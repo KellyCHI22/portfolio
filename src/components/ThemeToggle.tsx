@@ -1,6 +1,7 @@
 // reference: https://www.kevinzunigacuellar.com/blog/dark-mode-in-astro/
 import { useEffect, useRef, useState } from 'react';
-import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
+import pkg from 'react-icons/bs';
+const { BsFillMoonStarsFill, BsFillSunFill } = pkg;
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState(localStorage.getItem('theme') ?? 'light');
