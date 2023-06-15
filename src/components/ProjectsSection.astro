@@ -1,6 +1,14 @@
 ---
 import Icon from 'astro-icon';
 import ImageSlider from './ImageSlider';
+import howto_1 from '../images/mockup_howto_1.jpg';
+import howto_mobile from '../images/mockup_howto_mobile.png';
+import howto_demo_1 from '../images/howto_demo_1.gif';
+import howto_demo_2 from '../images/howto_demo_3.gif';
+import twitter_1 from '../images/mockup_alpha_twitter_1.jpg';
+import twitter_mobile from '../images/mockup_alpha_twitter_mobile.jpg';
+import twitter_demo_1 from '../images/tweet-demo.gif';
+import twitter_demo_2 from '../images/reply-demo.gif';
 
 type Project = {
   title: string;
@@ -19,12 +27,7 @@ const projects: Project[] = [
       'A SPA website which lets users to discover and craft unique step-by-step tutorials. Designed and developed from scratch without any guidance in 8 one week sprints.',
     demo: 'https://howto-creative.web.app/',
     repo: 'https://github.com/KellyCHI22/HowTo',
-    images: [
-      '/public/mockup_howto_1.jpg',
-      '/public/mockup_howto_mobile.png',
-      '/public/howto_demo_1.gif',
-      '/public/howto_demo_3.gif',
-    ],
+    images: [howto_1, howto_mobile, howto_demo_1, howto_demo_2],
   },
   {
     title: 'Alpha Twitter',
@@ -33,12 +36,7 @@ const projects: Project[] = [
       'A collaborative simple Twitter clone with front-end, back-end trainees at Alpha Camp. Completed within 2 weeks using Agile development methodology.',
     demo: 'https://weilocus.github.io/twitter/',
     repo: 'https://github.com/KellyCHI22/twitter',
-    images: [
-      '/public/mockup_alpha_twitter_1.jpg',
-      '/public/mockup_alpha_twitter_mobile.jpg',
-      '/public/tweet-demo.gif',
-      '/public/reply-demo.gif',
-    ],
+    images: [twitter_1, twitter_mobile, twitter_demo_1, twitter_demo_2],
   },
 ];
 ---

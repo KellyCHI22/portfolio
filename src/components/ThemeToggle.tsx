@@ -15,12 +15,12 @@ export default function ThemeToggle() {
   useEffect(() => {
     if (theme === 'dark') {
       document.documentElement.classList.add('dark');
-      faviconRef.current.setAttribute('href', `/public/logo-light.svg`);
-      logoRef.current.setAttribute('src', `/public/logo-light.svg`);
+      faviconRef.current.setAttribute('href', `/logo-light.svg`);
+      logoRef.current.setAttribute('src', `/logo-light.svg`);
     } else {
       document.documentElement.classList.remove('dark');
-      faviconRef.current.setAttribute('href', `/public/logo-dark.svg`);
-      logoRef.current.setAttribute('src', `/public/logo-dark.svg`);
+      faviconRef.current.setAttribute('href', `/logo-dark.svg`);
+      logoRef.current.setAttribute('src', `/logo-dark.svg`);
     }
     localStorage.setItem('theme', theme);
   }, [theme]);

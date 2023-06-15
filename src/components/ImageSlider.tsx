@@ -39,14 +39,14 @@ export default function ImageSlider({ imagesData }: { imagesData: string[] }) {
         className="p-[0.5] bg-jet-500 text-alabaster-500 rounded-full absolute left-2 top-[40%] grid place-items-center opacity-70 hover:opacity-100"
         onClick={prevSlide}
       >
-        <img src="/public/round-arrow-back-ios.svg" alt="" className="p-1" />
+        <img src="/round-arrow-back-ios.svg" alt="" className="p-1" />
         {/* <IoIosArrowBack className="text-2xl" /> */}
       </button>
       <button
         className="p-[0.5] bg-jet-500 text-alabaster-500 rounded-full absolute right-2 top-[40%] grid place-items-center opacity-70 hover:opacity-100"
         onClick={nextSlide}
       >
-        <img src="/public/round-arrow-forward-ios.svg" alt="" className="p-1" />
+        <img src="/round-arrow-forward-ios.svg" alt="" className="p-1" />
         {/* <IoIosArrowForward className="text-2xl" /> */}
       </button>
       <div className="flex gap-3 w-full justify-center mt-3">

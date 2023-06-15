@@ -25,7 +25,7 @@ export default function Navbar() {
         )}
       >
         <div className="flex justify-between p-3 items-center">
-          <img id="logo" src={`/public/logo-${logoTheme}.svg`} />
+          <img id="logo" src={`/logo-${logoTheme}.svg`} />
           {showMenu ? (
             <BsX
               className="text-5xl block cursor-pointer"
