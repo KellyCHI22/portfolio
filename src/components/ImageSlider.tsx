@@ -29,6 +29,7 @@ export default function ImageSlider({ imagesData }: { imagesData: string[] }) {
                 key={index}
                 src={image}
                 alt="project-image"
+                loading="lazy"
                 className="w-full object-cover flex-shrink-0"
               />
             );
@@ -39,14 +40,24 @@ export default function ImageSlider({ imagesData }: { imagesData: string[] }) {
         className="p-[0.5] bg-jet-500 text-alabaster-500 rounded-full absolute left-2 top-[40%] grid place-items-center opacity-70 hover:opacity-100"
         onClick={prevSlide}
       >
-        <img src="/round-arrow-back-ios.svg" alt="" className="p-1" />
+        <img
+          src="/round-arrow-back-ios.svg"
+          alt="back-arrow"
+          className="p-1"
+          loading="lazy"
+        />
         {/* <IoIosArrowBack className="text-2xl" /> */}
       </button>
       <button
         className="p-[0.5] bg-jet-500 text-alabaster-500 rounded-full absolute right-2 top-[40%] grid place-items-center opacity-70 hover:opacity-100"
         onClick={nextSlide}
       >
-        <img src="/round-arrow-forward-ios.svg" alt="" className="p-1" />
+        <img
+          src="/round-arrow-forward-ios.svg"
+          alt="forward-arrow"
+          className="p-1"
+          loading="lazy"
+        />
         {/* <IoIosArrowForward className="text-2xl" /> */}
       </button>
       <div className="flex gap-3 w-full justify-center mt-3">
@@ -54,9 +65,12 @@ export default function ImageSlider({ imagesData }: { imagesData: string[] }) {
           return (
             <div
               key={index}
-              className={clsx('w-4 h-1 rounded-full bg-jet-200', {
-                'bg-jet-500': current === index,
-              })}
+              className={clsx(
+                'w-4 h-1 rounded-full bg-jet-200 dark:bg-jet-400',
+                {
+                  'bg-jet-500 dark:bg-jet-100': current === index,
+                }
+              )}
             />
           );
         })}

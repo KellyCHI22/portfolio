@@ -11,7 +11,10 @@ export default function Navbar() {
   return (
     <>
       {showMenu && (
-        <div className="backdrop-blur w-screen h-screen fixed top-0 left-0 z-10" />
+        <div
+          className="backdrop-blur w-screen h-screen fixed top-0 left-0 z-10"
+          onClick={handleShowMenu}
+        />
       )}
 
       <nav
@@ -25,7 +28,10 @@ export default function Navbar() {
         )}
       >
         <div className="flex justify-between p-3 items-center">
-          <img id="logo" src={`/logo-${logoTheme}.svg`} />
+          <a href="#">
+            <img id="logo" src={`/logo-${logoTheme}.svg`} />
+          </a>
+
           {showMenu ? (
             <BsX
               className="text-5xl block cursor-pointer"
@@ -42,7 +48,7 @@ export default function Navbar() {
           <>
             <div>
               <ul className="text-center space-y-5 text-lg">
-                <li>
+                <li onClick={handleShowMenu}>
                   <a
                     href="#"
                     className="font-semibold border-b-4 border-alabaster-500 hover:border-vermilion-500
@@ -52,7 +58,7 @@ export default function Navbar() {
                     Home
                   </a>
                 </li>
-                <li>
+                <li onClick={handleShowMenu}>
                   <a
                     href="#projects"
                     className="font-semibold border-b-4 border-alabaster-500 hover:border-vermilion-500 dark:border-jet-500
@@ -61,18 +67,18 @@ export default function Navbar() {
                     Projects
                   </a>
                 </li>
-                <li>
+                <li onClick={handleShowMenu}>
                   <a
-                    href="#"
+                    href="#resume"
                     className="font-semibold border-b-4 border-alabaster-500 hover:border-vermilion-500 dark:border-jet-500
                   dark:hover:border-vermilion-500"
                   >
                     Resume
                   </a>
                 </li>
-                <li>
+                <li onClick={handleShowMenu}>
                   <a
-                    href="#"
+                    href="#contact"
                     className="font-semibold border-b-4 border-alabaster-500 hover:border-vermilion-500 dark:border-jet-500
                   dark:hover:border-vermilion-500"
                   >
