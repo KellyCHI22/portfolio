@@ -1,7 +1,5 @@
 import clsx from 'clsx';
 import { useState } from 'react';
-import pkg from 'react-icons/ri';
-const { RiArrowLeftSLine, RiArrowRightSLine } = pkg;
 
 export default function ImageSlider({ imagesData }: { imagesData: string[] }) {
   const [current, setCurrent] = useState(0);
@@ -41,13 +39,15 @@ export default function ImageSlider({ imagesData }: { imagesData: string[] }) {
         className="p-[0.5] bg-jet-500 text-alabaster-500 rounded-full absolute left-2 top-[40%] grid place-items-center opacity-70 hover:opacity-100"
         onClick={prevSlide}
       >
-        <RiArrowLeftSLine className="text-2xl" />
+        <img src="/public/round-arrow-back-ios.svg" alt="" className="p-1" />
+        {/* <IoIosArrowBack className="text-2xl" /> */}
       </button>
       <button
         className="p-[0.5] bg-jet-500 text-alabaster-500 rounded-full absolute right-2 top-[40%] grid place-items-center opacity-70 hover:opacity-100"
         onClick={nextSlide}
       >
-        <RiArrowRightSLine className="text-2xl" />
+        <img src="/public/round-arrow-forward-ios.svg" alt="" className="p-1" />
+        {/* <IoIosArrowForward className="text-2xl" /> */}
       </button>
       <div className="flex gap-3 w-full justify-center mt-3">
         {Array.from(imagesData).map((image, index) => {
