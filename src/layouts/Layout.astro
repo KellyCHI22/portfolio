@@ -2,6 +2,7 @@
 import '@fontsource/righteous';
 import '@fontsource-variable/red-hat-display';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer.astro';
 export interface Props {
   title: string;
 }
@@ -24,11 +25,7 @@ const { title } = Astro.props;
   >
     <Navbar client:only />
     <slot />
-    <footer
-      class="pt-3 pb-2 bg-vermilion-500 text-center text-pearl-bush-500 dark:bg-asparagus-500"
-    >
-      Designed in Figma and built with Astro <br /> @ Kelly CHI 2023
-    </footer>
+    <Footer />
   </body>
 </html>
 
