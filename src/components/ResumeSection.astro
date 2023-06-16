@@ -1,0 +1,34 @@
+---
+import resumePNG from '../images/Kelly_CHI_resume_ENG_2023_web_dev.png';
+import resumePDF from '../images/Kelly_CHI_resume_ ENG_2023_web_dev.pdf';
+import { Icon } from 'astro-icon';
+---
+
+<section id="resume" class="pt-24 mb-16 mx-7">
+  <h3
+    class="w-fit mb-8 font-righteous text-3xl mx-auto border-b-4 border-vermilion-500 dark:border-asparagus-500"
+  >
+    Resume
+  </h3>
+  <div class="p-2 bg-jet-500 dark:bg-asparagus-500">
+    <img src={resumePNG} alt="resume-kelly-chi" loading="lazy" />
+  </div>
+  <div class="flex gap-2 mt-5 justify-center">
+    <a
+      href={resumePDF}
+      download="KellyCHI_Resume_2023"
+      class="bg-jet-500 text-pearl-bush-500 flex items-center p-2 px-3 gap-2 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+    >
+      <Icon name="mdi:file-download" class="w-5 inline" />
+      Download</a
+    >
+    <a
+      href={resumePDF}
+      target="_blank"
+      class="border-jet-500 border flex items-center p-2 px-3 gap-2 dark:border-pearl-bush-500 dark:hover:bg-jet-400 hover:bg-jet-100"
+    >
+      <Icon name="tabler:external-link" class="w-5 inline" />
+      View Online</a
+    >
+  </div>
+</section>

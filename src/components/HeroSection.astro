@@ -1,4 +1,5 @@
 ---
+import resumePDF from '../images/Kelly_CHI_resume_ ENG_2023_web_dev.pdf';
 import { Icon } from 'astro-icon';
 ---
 
@@ -17,7 +18,7 @@ import { Icon } from 'astro-icon';
     apps, enjoys writing documentation and loves helping people learn how to
     code.
   </p>
-  <div class="my-8 space-x-3">
+  <div class="my-8 space-x-4 flex items-center">
     <a
       href="https://github.com/KellyCHI22"
       target="_blank"
@@ -33,11 +34,12 @@ import { Icon } from 'astro-icon';
       <Icon name="mdi:linkedin" class="w-9" />
     </a>
     <a
-      href="https://codepen.io/kellychi"
+      href={resumePDF}
       target="_blank"
-      class="inline-block p-2 text-2xl bg-jet-500 rounded-full text-pearl-bush-500 dark:bg-pearl-bush-500 dark:text-jet-500 hover:bg-jet-400 dark:hover:bg-pearl-bush-600"
+      class="w-[3.25rem] h-[3.25rem] text-2xl bg-jet-500 rounded-full text-pearl-bush-500 dark:bg-pearl-bush-500 dark:text-jet-500 hover:bg-jet-400 dark:hover:bg-pearl-bush-600 grid place-items-center"
     >
-      <Icon name="ri:codepen-fill" class="w-9" />
+      <p class="font-extrabold">CV</p>
+      <!-- <Icon name="mdi:resume" class="w-9" /> -->
     </a>
     <a
       href="mailto: chihsinting@gmail.com"
