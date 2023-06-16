@@ -1,0 +1,47 @@
+---
+import { Icon } from 'astro-icon';
+import ContactForm from './ContactForm';
+---
+
+<section id="contact" class="pt-24 mb-16 mx-7">
+  <h3
+    class="w-fit mb-12 font-righteous text-3xl mx-auto border-b-4 border-vermilion-500 dark:border-asparagus-500"
+  >
+    Contact
+  </h3>
+  <h4 class="text-2xl font-righteous text-center">Find me on</h4>
+  <div class="my-5 space-x-4 flex items-center justify-center">
+    <a
+      href="https://github.com/KellyCHI22"
+      target="_blank"
+      class="inline-block p-2 text-2xl bg-jet-500 rounded-full text-pearl-bush-500 dark:bg-pearl-bush-500 dark:text-jet-500 hover:bg-jet-400 dark:hover:bg-pearl-bush-600"
+    >
+      <Icon name="mdi:github" class="w-9" />
+    </a>
+    <a
+      href="https://linkedin.com/in/kelly-chi-front-end"
+      target="_blank"
+      class="inline-block p-2 text-2xl bg-jet-500 rounded-full text-pearl-bush-500 dark:bg-pearl-bush-500 dark:text-jet-500 hover:bg-jet-400 dark:hover:bg-pearl-bush-600"
+    >
+      <Icon name="mdi:linkedin" class="w-9" />
+    </a>
+    <a
+      href="https://codepen.io/kellychi"
+      target="_blank"
+      class="w-[3.25rem] h-[3.25rem] text-2xl bg-jet-500 rounded-full text-pearl-bush-500 dark:bg-pearl-bush-500 dark:text-jet-500 hover:bg-jet-400 dark:hover:bg-pearl-bush-600 grid place-items-center"
+    >
+      <Icon name="ri:codepen-fill" class="w-9" />
+    </a>
+    <a
+      href="mailto: chihsinting@gmail.com"
+      target="_blank"
+      class="inline-block p-2 text-2xl bg-jet-500 rounded-full text-pearl-bush-500 dark:bg-pearl-bush-500 dark:text-jet-500 hover:bg-jet-400 dark:hover:bg-pearl-bush-600"
+    >
+      <Icon name="ph:envelope" class="w-9" />
+    </a>
+  </div>
+  <h4 class="text-2xl font-righteous text-center">Or leave a message...</h4>
+  <div>
+    <ContactForm client:visible />
+  </div>
+</section>

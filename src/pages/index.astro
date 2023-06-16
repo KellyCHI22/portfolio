@@ -4,7 +4,7 @@ import ProjectsSection from '../components/ProjectsSection.astro';
 import ToolingSection from '../components/ToolingSection.astro';
 import ResumeSection from '../components/ResumeSection.astro';
 import Layout from '../layouts/Layout.astro';
-import { Icon } from 'astro-icon';
+import ContactSection from '../components/ContactSection.astro';
 ---
 
 <Layout title="Kelly CHI | Front End Developer">
@@ -13,5 +13,11 @@ import { Icon } from 'astro-icon';
     <ToolingSection />
     <ProjectsSection />
     <ResumeSection />
+    <ContactSection />
   </main>
+  <form name="contact-form" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <textarea name="message"></textarea>
+  </form>
 </Layout>
