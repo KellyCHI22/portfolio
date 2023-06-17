@@ -20,7 +20,7 @@ export default function ImageSlider({ imagesData }: { imagesData: string[] }) {
     <div className="relative">
       <div className="overflow-hidden">
         <div
-          className="flex h-48 w-full transition-transform duration-500 ease-out"
+          className="flex h-52 w-full transition-transform duration-500 ease-out"
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
           {imagesData.map((image, index) => {

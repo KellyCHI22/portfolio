@@ -2,9 +2,19 @@
 import { Icon } from 'astro-icon';
 ---
 
-<footer class="bg-vermilion-500 dark:bg-asparagus-500">
-  <Icon name="mobile_bg2_light" class="dark:hidden" />
-  <Icon name="mobile_bg2_dark" class="hidden dark:inline" />
+<footer
+  class="bg-vermilion-500 dark:bg-asparagus-500 md:bg-pearl-bush-500 md:dark:bg-jet-500"
+>
+  <Icon name="mobile_bg2_light" class="dark:hidden md:hidden" />
+  <Icon name="mobile_bg2_dark" class="hidden dark:inline md:dark:hidden" />
+  <Icon
+    name="laptop_bg2_light"
+    class="hidden border-b border-vermilion-500 md:block md:dark:hidden"
+  />
+  <Icon
+    name="laptop_bg2_dark"
+    class="hidden border-b border-asparagus-500 md:dark:block"
+  />
   <div
     class="bg-vermilion-500 pb-2 pt-3 text-center text-pearl-bush-500 dark:bg-asparagus-500"
   >

@@ -41,7 +41,7 @@ const projects: Project[] = [
 ];
 ---
 
-<section id="projects" class="mx-7 mb-16 pt-24">
+<section id="projects" class="mx-7 mb-16 pt-24 md:mb-0">
   <h3
     class="mx-auto mb-8 w-fit border-b-4 border-vermilion-500 font-righteous text-3xl dark:border-asparagus-500"
   >
@@ -50,43 +50,47 @@ const projects: Project[] = [
   <div class="space-y-12">
     {
       projects.map((project) => (
-        <div class="space-y-2">
-          <div>
+        <div class="md:flex md:items-center md:gap-8">
+          <div class="md:flex-1">
             <ImageSlider client:visible imagesData={project.images} />
           </div>
-          <h4 class="pt-2 font-righteous text-[1.75rem]">{project.title}</h4>
-          <div class="flex flex-wrap gap-2">
-            {project.tags.map((tag) => (
-              <span class="rounded-full border border-vermilion-500 px-2 py-[0.15rem] text-sm text-vermilion-500 dark:border-asparagus-400 dark:text-asparagus-400">
-                {tag}
-              </span>
-            ))}
-          </div>
-          <p class="py-3">{project.description}</p>
-          <div class="flex flex-wrap gap-1">
-            <a
-              href={project.demo}
-              target="_blank"
-              class="flex items-center gap-2 bg-jet-500 p-2 px-3 text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
-            >
-              <Icon name="mdi:eye" class="inline w-5" /> <span>Demo</span>
-            </a>
-            <a
-              href={project.repo}
-              target="_blank"
-              class="flex items-center gap-2 bg-jet-500 p-2 px-3 text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
-            >
-              <>
-                <Icon name="mdi:github" class="inline w-5" />
-                <span>Repo</span>
-              </>
-            </a>
-            <button class="flex items-center gap-2 border border-jet-500 p-2 px-3 hover:bg-jet-100 dark:border-pearl-bush-500 dark:hover:bg-jet-400">
-              <>
-                <Icon name="ph:plus-bold" class="inline w-5" />
-                <span>More</span>
-              </>
-            </button>
+          <div class="space-y-2 md:flex-1 md:space-y-1">
+            <h4 class="pt-2 font-righteous text-[1.75rem] md:pt-0">
+              {project.title}
+            </h4>
+            <div class="flex flex-wrap gap-2">
+              {project.tags.map((tag) => (
+                <span class="rounded-full border border-vermilion-500 px-2 py-[0.15rem] text-sm text-vermilion-500 dark:border-asparagus-400 dark:text-asparagus-400">
+                  {tag}
+                </span>
+              ))}
+            </div>
+            <p class="py-3">{project.description}</p>
+            <div class="flex flex-wrap gap-1 md:gap-2">
+              <a
+                href={project.demo}
+                target="_blank"
+                class="flex items-center gap-2 bg-jet-500 p-2 px-3 text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+              >
+                <Icon name="mdi:eye" class="inline w-5" /> <span>Demo</span>
+              </a>
+              <a
+                href={project.repo}
+                target="_blank"
+                class="flex items-center gap-2 bg-jet-500 p-2 px-3 text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+              >
+                <>
+                  <Icon name="mdi:github" class="inline w-5" />
+                  <span>Repo</span>
+                </>
+              </a>
+              <button class="flex items-center gap-2 border border-jet-500 p-2 px-3 hover:bg-jet-100 dark:border-pearl-bush-500 dark:hover:bg-jet-400">
+                <>
+                  <Icon name="ph:plus-bold" class="inline w-5" />
+                  <span>More</span>
+                </>
+              </button>
+            </div>
           </div>
         </div>
       ))

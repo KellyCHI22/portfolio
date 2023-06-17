@@ -4,31 +4,33 @@ import resumePDF from '../images/Kelly_CHI_resume_ ENG_2023_web_dev.pdf';
 import { Icon } from 'astro-icon';
 ---
 
-<section id="resume" class="mx-7 mb-16 pt-24">
+<section id="resume" class="mx-7 mb-16 pt-24 md:mx-20 md:mb-0">
   <h3
     class="mx-auto mb-8 w-fit border-b-4 border-vermilion-500 font-righteous text-3xl dark:border-asparagus-500"
   >
     Resume
   </h3>
-  <div class="bg-jet-500 p-2 dark:bg-asparagus-500">
-    <img src={resumePNG} alt="resume-kelly-chi" loading="lazy" />
-  </div>
-  <div class="mt-5 flex justify-center gap-2">
-    <a
-      href={resumePDF}
-      download="KellyCHI_Resume_2023"
-      class="flex items-center gap-2 bg-jet-500 p-2 px-3 text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
-    >
-      <Icon name="mdi:file-download" class="inline w-5" />
-      Download</a
-    >
-    <a
-      href="https://drive.google.com/file/d/1iLSw5IqqPYPDXH8jqj2lsFxyoilebgkj/view?usp=sharing"
-      target="_blank"
-      class="flex items-center gap-2 border border-jet-500 p-2 px-3 hover:bg-jet-100 dark:border-pearl-bush-500 dark:hover:bg-jet-400"
-    >
-      <Icon name="tabler:external-link" class="inline w-5" />
-      View Online</a
-    >
+  <div class="md:flex md:items-center md:gap-5">
+    <div class="bg-jet-500 p-2 dark:bg-asparagus-500 md:flex-1">
+      <img src={resumePNG} alt="resume-kelly-chi" loading="lazy" />
+    </div>
+    <div class="mt-5 flex justify-center gap-2">
+      <a
+        href={resumePDF}
+        download="KellyCHI_Resume_2023"
+        class="flex items-center gap-2 bg-jet-500 p-2 px-3 text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+      >
+        <Icon name="mdi:file-download" class="inline w-5" />
+        Download</a
+      >
+      <a
+        href="https://drive.google.com/file/d/1iLSw5IqqPYPDXH8jqj2lsFxyoilebgkj/view?usp=sharing"
+        target="_blank"
+        class="flex items-center gap-2 border border-jet-500 p-2 px-3 hover:bg-jet-100 dark:border-pearl-bush-500 dark:hover:bg-jet-400"
+      >
+        <Icon name="tabler:external-link" class="inline w-5" />
+        View Online</a
+      >
+    </div>
   </div>
 </section>

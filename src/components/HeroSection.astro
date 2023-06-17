@@ -2,21 +2,33 @@
 import { Icon } from 'astro-icon';
 ---
 
-<section id="home" class="relative h-screen px-7">
+<section id="home" class="relative h-screen px-7 md:h-auto md:px-12">
   <Icon
     name="mobile_bg_light"
-    class="absolute left-24 top-20 w-[250px] dark:hidden"
+    class="absolute left-24 top-20 w-[250px] dark:hidden md:hidden"
   />
   <Icon
     name="mobile_bg_dark"
-    class="absolute left-24 top-20 hidden w-[250px] dark:inline"
+    class="absolute left-24 top-20 hidden w-[250px] dark:inline md:dark:hidden"
   />
-  <h1 class="absolute left-7 top-48 font-righteous text-8xl dark:text-white">
+  <Icon
+    name="laptop_bg_light"
+    class="absolute right-16 top-52 hidden w-64 md:block"
+  />
+  <Icon
+    name="laptop_bg_dark"
+    class="absolute right-16 top-52 hidden w-64 md:dark:block"
+  />
+  <h1
+    class="absolute left-7 top-48 font-righteous text-8xl dark:text-white md:left-12 md:top-36 md:dark:text-pearl-bush-500"
+  >
     Kelly<br /> CHI
   </h1>
 
-  <h2 class="pt-[25rem] text-3xl font-thin">Front End Developer</h2>
-  <p class="my-5 mr-5 font-thin">
+  <h2 class="pt-[25rem] text-3xl font-thin md:pt-[22rem]">
+    Front End Developer
+  </h2>
+  <p class="my-5 mr-5 font-thin md:max-w-[30ch]">
     I’m a front-end developer who loves building user-friendly websites and web
     apps, enjoys writing documentation and loves helping people learn how to
     code.
