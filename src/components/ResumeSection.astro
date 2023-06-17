@@ -4,15 +4,20 @@ import resumePDF from '../images/Kelly_CHI_resume_ ENG_2023_web_dev.pdf';
 import { Icon } from 'astro-icon';
 ---
 
-<section id="resume" class="mx-7 mb-16 pt-24 md:mx-20 md:mb-0">
+<section id="resume" class="mx-7 mb-16 pt-24 md:mx-20 md:mb-0 lg:mx-64">
   <h3
-    class="mx-auto mb-8 w-fit border-b-4 border-vermilion-500 font-righteous text-3xl dark:border-asparagus-500"
+    class="mx-auto mb-8 w-fit border-b-4 border-vermilion-500 font-righteous text-3xl dark:border-asparagus-500 lg:text-4xl"
   >
     Resume
   </h3>
-  <div class="md:flex md:items-center md:gap-5">
-    <div class="bg-jet-500 p-2 dark:bg-asparagus-500 md:flex-1">
-      <img src={resumePNG} alt="resume-kelly-chi" loading="lazy" />
+  <div class="md:flex md:items-center md:gap-5 lg:justify-center">
+    <div class="md:flex-1 lg:flex-initial">
+      <img
+        src={resumePNG}
+        alt="resume-kelly-chi"
+        loading="lazy"
+        class="border-[0.5rem] border-jet-500 dark:border-asparagus-500 lg:h-[400px]"
+      />
     </div>
     <div class="mt-5 flex justify-center gap-2">
       <a

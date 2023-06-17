@@ -144,10 +144,10 @@ export default function ContactForm() {
           </div>
         )}
       </div>
-      <p className="h-10 pt-3 text-center text-vermilion-500 ">
+      <p className="h-10 pt-3 text-center text-vermilion-500 lg:text-right">
         {formError && formError}
       </p>
-      <div className="mt-5 flex justify-center gap-2 md:gap-5">
+      <div className="mt-5 flex justify-center gap-2 md:gap-5 lg:justify-end">
         <button
           type="button"
           onClick={handleReset}

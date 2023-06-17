@@ -3,47 +3,53 @@ import { Icon } from 'astro-icon';
 import ContactForm from './ContactForm';
 ---
 
-<section id="contact" class="mx-7 mb-16 pt-24">
+<section id="contact" class="mx-7 mb-16 pt-24 lg:mx-48">
   <h3
-    class="mx-auto mb-12 w-fit border-b-4 border-vermilion-500 font-righteous text-3xl dark:border-asparagus-500"
+    class="mx-auto mb-12 w-fit border-b-4 border-vermilion-500 font-righteous text-3xl dark:border-asparagus-500 lg:text-4xl"
   >
     Contact
   </h3>
-  <h4 class="text-center font-righteous text-2xl">Find me on</h4>
-  <div class="my-5 flex items-center justify-center space-x-4">
-    <a
-      href="https://github.com/KellyCHI22"
-      target="_blank"
-      class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
-    >
-      <Icon name="mdi:github" class="w-9" />
-    </a>
-    <a
-      href="https://linkedin.com/in/kelly-chi-front-end"
-      target="_blank"
-      class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
-    >
-      <Icon name="mdi:linkedin" class="w-9" />
-    </a>
-    <a
-      href="https://codepen.io/kellychi"
-      target="_blank"
-      class="grid h-[3.25rem] w-[3.25rem] place-items-center rounded-full bg-jet-500 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
-    >
-      <Icon name="ri:codepen-fill" class="w-9" />
-    </a>
-    <a
-      href="mailto: chihsinting@gmail.com"
-      target="_blank"
-      class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
-    >
-      <Icon name="ph:envelope" class="w-9" />
-    </a>
-  </div>
-  <h4 class="mt-16 text-center font-righteous text-2xl">
-    Or leave a message...
-  </h4>
-  <div class="md:mx-16">
-    <ContactForm client:visible />
+  <div class="lg:flex lg:gap-12">
+    <div class="lg:flex-[30%]">
+      <h4 class="text-center font-righteous text-2xl lg:text-left">
+        Find me on
+      </h4>
+      <div class="my-5 flex items-center justify-center space-x-4">
+        <a
+          href="https://github.com/KellyCHI22"
+          target="_blank"
+          class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+        >
+          <Icon name="mdi:github" class="w-9" />
+        </a>
+        <a
+          href="https://linkedin.com/in/kelly-chi-front-end"
+          target="_blank"
+          class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+        >
+          <Icon name="mdi:linkedin" class="w-9" />
+        </a>
+        <a
+          href="https://codepen.io/kellychi"
+          target="_blank"
+          class="grid h-[3.25rem] w-[3.25rem] place-items-center rounded-full bg-jet-500 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+        >
+          <Icon name="ri:codepen-fill" class="w-9" />
+        </a>
+        <a
+          href="mailto: chihsinting@gmail.com"
+          target="_blank"
+          class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+        >
+          <Icon name="ph:envelope" class="w-9" />
+        </a>
+      </div>
+      <h4 class="mt-16 text-center font-righteous text-2xl lg:text-left">
+        Or leave a message...
+      </h4>
+    </div>
+    <div class="md:mx-16 lg:mx-0 lg:flex-[70%]">
+      <ContactForm client:visible />
+    </div>
   </div>
 </section>

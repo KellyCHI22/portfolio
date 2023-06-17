@@ -2,7 +2,10 @@
 import { Icon } from 'astro-icon';
 ---
 
-<section id="home" class="relative h-screen px-7 md:h-auto md:px-12">
+<section
+  id="home"
+  class="relative h-screen px-7 md:h-auto md:px-12 lg:flex lg:h-screen lg:items-center lg:justify-center lg:gap-32 lg:px-36 lg:pt-16"
+>
   <Icon
     name="mobile_bg_light"
     class="absolute left-24 top-20 w-[250px] dark:hidden md:hidden"
@@ -13,54 +16,58 @@ import { Icon } from 'astro-icon';
   />
   <Icon
     name="laptop_bg_light"
-    class="absolute right-16 top-52 hidden w-64 md:block"
+    class="absolute right-16 top-52 hidden w-64 md:block lg:hidden"
   />
   <Icon
     name="laptop_bg_dark"
-    class="absolute right-16 top-52 hidden w-64 md:dark:block"
+    class="absolute right-16 top-52 hidden w-64 md:dark:block lg:dark:hidden"
   />
-  <h1
-    class="absolute left-7 top-48 font-righteous text-8xl dark:text-white md:left-12 md:top-36 md:dark:text-pearl-bush-500"
-  >
-    Kelly<br /> CHI
-  </h1>
+  <div>
+    <h1
+      class="absolute left-7 top-48 font-righteous text-8xl dark:text-white md:left-12 md:top-36 md:dark:text-pearl-bush-500 lg:relative lg:left-[-0.5rem] lg:top-0"
+    >
+      Kelly<br class="lg:hidden" /> CHI
+    </h1>
 
-  <h2 class="pt-[25rem] text-3xl font-thin md:pt-[22rem]">
-    Front End Developer
-  </h2>
-  <p class="my-5 mr-5 font-thin md:max-w-[30ch]">
-    I’m a front-end developer who loves building user-friendly websites and web
-    apps, enjoys writing documentation and loves helping people learn how to
-    code.
-  </p>
-  <div class="my-8 flex items-center space-x-4">
-    <a
-      href="https://github.com/KellyCHI22"
-      target="_blank"
-      class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
-    >
-      <Icon name="mdi:github" class="w-9" />
-    </a>
-    <a
-      href="https://linkedin.com/in/kelly-chi-front-end"
-      target="_blank"
-      class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
-    >
-      <Icon name="mdi:linkedin" class="w-9" />
-    </a>
-    <a
-      href="https://drive.google.com/file/d/1iLSw5IqqPYPDXH8jqj2lsFxyoilebgkj/view"
-      target="_blank"
-      class="grid h-[3.25rem] w-[3.25rem] place-items-center rounded-full bg-jet-500 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
-    >
-      <p class="font-extrabold">CV</p>
-    </a>
-    <a
-      href="mailto: chihsinting@gmail.com"
-      target="_blank"
-      class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
-    >
-      <Icon name="ph:envelope" class="w-9" />
-    </a>
+    <h2 class="pt-[25rem] text-3xl font-thin md:pt-[22rem] lg:pt-3">
+      Front End Developer
+    </h2>
+    <p class="my-5 mr-5 font-thin md:max-w-[30ch] lg:max-w-[40ch]">
+      I love building beautiful and intuitive web apps.
+    </p>
+    <div class="my-8 flex items-center space-x-4 lg:my-0 lg:pt-16">
+      <a
+        href="https://github.com/KellyCHI22"
+        target="_blank"
+        class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+      >
+        <Icon name="mdi:github" class="w-9" />
+      </a>
+      <a
+        href="https://linkedin.com/in/kelly-chi-front-end"
+        target="_blank"
+        class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+      >
+        <Icon name="mdi:linkedin" class="w-9" />
+      </a>
+      <a
+        href="https://drive.google.com/file/d/1iLSw5IqqPYPDXH8jqj2lsFxyoilebgkj/view"
+        target="_blank"
+        class="grid h-[3.25rem] w-[3.25rem] place-items-center rounded-full bg-jet-500 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+      >
+        <p class="font-extrabold">CV</p>
+      </a>
+      <a
+        href="mailto: chihsinting@gmail.com"
+        target="_blank"
+        class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+      >
+        <Icon name="ph:envelope" class="w-9" />
+      </a>
+    </div>
+  </div>
+  <div>
+    <Icon name="desktop_bg_light" class="hidden w-80 lg:block lg:dark:hidden" />
+    <Icon name="desktop_bg_dark" class="hidden w-80 lg:dark:block" />
   </div>
 </section>
