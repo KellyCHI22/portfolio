@@ -41,9 +41,9 @@ const projects: Project[] = [
 ];
 ---
 
-<section id="projects" class="pt-24 mb-16 mx-7">
+<section id="projects" class="mx-7 mb-16 pt-24">
   <h3
-    class="w-fit mb-8 font-righteous text-3xl mx-auto border-b-4 border-vermilion-500 dark:border-asparagus-500"
+    class="mx-auto mb-8 w-fit border-b-4 border-vermilion-500 font-righteous text-3xl dark:border-asparagus-500"
   >
     Projects
   </h3>
@@ -54,34 +54,34 @@ const projects: Project[] = [
           <div>
             <ImageSlider client:visible imagesData={project.images} />
           </div>
-          <h4 class="font-righteous text-[1.75rem] pt-2">{project.title}</h4>
+          <h4 class="pt-2 font-righteous text-[1.75rem]">{project.title}</h4>
           <div class="flex flex-wrap gap-2">
             {project.tags.map((tag) => (
-              <span class="border border-vermilion-500 rounded-full text-vermilion-500 py-[0.15rem] px-2 text-sm dark:text-asparagus-400 dark:border-asparagus-400">
+              <span class="rounded-full border border-vermilion-500 px-2 py-[0.15rem] text-sm text-vermilion-500 dark:border-asparagus-400 dark:text-asparagus-400">
                 {tag}
               </span>
             ))}
           </div>
           <p class="py-3">{project.description}</p>
-          <div class="flex gap-1 flex-wrap">
+          <div class="flex flex-wrap gap-1">
             <a
               href={project.demo}
               target="_blank"
-              class="bg-jet-500 text-pearl-bush-500 flex items-center p-2 px-3 gap-2 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+              class="flex items-center gap-2 bg-jet-500 p-2 px-3 text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
             >
               <Icon name="mdi:eye" class="inline w-5" /> <span>Demo</span>
             </a>
             <a
               href={project.repo}
               target="_blank"
-              class="bg-jet-500 text-pearl-bush-500 flex items-center p-2 px-3 gap-2 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+              class="flex items-center gap-2 bg-jet-500 p-2 px-3 text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
             >
               <>
                 <Icon name="mdi:github" class="inline w-5" />
                 <span>Repo</span>
               </>
             </a>
-            <button class="border-jet-500 border flex items-center p-2 px-3 gap-2 dark:border-pearl-bush-500 dark:hover:bg-jet-400 hover:bg-jet-100">
+            <button class="flex items-center gap-2 border border-jet-500 p-2 px-3 hover:bg-jet-100 dark:border-pearl-bush-500 dark:hover:bg-jet-400">
               <>
                 <Icon name="ph:plus-bold" class="inline w-5" />
                 <span>More</span>

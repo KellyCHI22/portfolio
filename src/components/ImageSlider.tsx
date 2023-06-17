@@ -20,7 +20,7 @@ export default function ImageSlider({ imagesData }: { imagesData: string[] }) {
     <div className="relative">
       <div className="overflow-hidden">
         <div
-          className="flex transition-transform ease-out duration-500 w-full h-48"
+          className="flex h-48 w-full transition-transform duration-500 ease-out"
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
           {imagesData.map((image, index) => {
@@ -30,14 +30,14 @@ export default function ImageSlider({ imagesData }: { imagesData: string[] }) {
                 src={image}
                 alt="project-image"
                 loading="lazy"
-                className="w-full object-cover flex-shrink-0"
+                className="w-full flex-shrink-0 object-cover"
               />
             );
           })}
         </div>
       </div>
       <button
-        className="p-[0.5] bg-jet-500 text-pearl-bush-500 rounded-full absolute left-2 top-[40%] grid place-items-center opacity-70 hover:opacity-100"
+        className="absolute left-2 top-[40%] grid place-items-center rounded-full bg-jet-500 p-[0.5] text-pearl-bush-500 opacity-70 hover:opacity-100"
         onClick={prevSlide}
       >
         <img
@@ -49,7 +49,7 @@ export default function ImageSlider({ imagesData }: { imagesData: string[] }) {
         {/* <IoIosArrowBack className="text-2xl" /> */}
       </button>
       <button
-        className="p-[0.5] bg-jet-500 text-pearl-bush-500 rounded-full absolute right-2 top-[40%] grid place-items-center opacity-70 hover:opacity-100"
+        className="absolute right-2 top-[40%] grid place-items-center rounded-full bg-jet-500 p-[0.5] text-pearl-bush-500 opacity-70 hover:opacity-100"
         onClick={nextSlide}
       >
         <img
@@ -60,13 +60,13 @@ export default function ImageSlider({ imagesData }: { imagesData: string[] }) {
         />
         {/* <IoIosArrowForward className="text-2xl" /> */}
       </button>
-      <div className="flex gap-3 w-full justify-center mt-3">
+      <div className="mt-3 flex w-full justify-center gap-3">
         {Array.from(imagesData).map((image, index) => {
           return (
             <div
               key={index}
               className={clsx(
-                'w-4 h-1 rounded-full bg-jet-200 dark:bg-jet-400',
+                'h-1 w-4 rounded-full bg-jet-200 dark:bg-jet-400',
                 {
                   'bg-jet-500 dark:bg-white': current === index,
                 }

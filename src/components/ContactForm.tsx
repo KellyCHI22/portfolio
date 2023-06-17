@@ -78,7 +78,7 @@ export default function ContactForm() {
             </label>
             <Icon
               icon="bi:person-circle"
-              className="text-xl absolute top-[2.35rem] text-vermilion-400 left-3 dark:text-jet-400"
+              className="absolute left-3 top-[2.35rem] text-xl text-vermilion-400 dark:text-jet-400"
             />
             <input
               type="text"
@@ -87,7 +87,7 @@ export default function ContactForm() {
               value={formData.name}
               placeholder="Name"
               onChange={handleChange}
-              className="w-full leading-10 p-1 pr-3 pl-10 focus:ring-vermilion-400 focus:ring-2 focus:outline-none placeholder:text-vermilion-500 dark:placeholder:text-jet-400
+              className="w-full p-1 pl-10 pr-3 leading-10 placeholder:text-vermilion-500 focus:outline-none focus:ring-2 focus:ring-vermilion-400 dark:placeholder:text-jet-400
               dark:focus:ring-asparagus-400"
             />
           </div>
@@ -97,7 +97,7 @@ export default function ContactForm() {
             </label>
             <Icon
               icon="bi:envelope"
-              className="text-xl absolute top-[2.35rem] text-vermilion-400 left-3 dark:text-jet-400"
+              className="absolute left-3 top-[2.35rem] text-xl text-vermilion-400 dark:text-jet-400"
             />
             <input
               type="email"
@@ -106,7 +106,7 @@ export default function ContactForm() {
               value={formData.email}
               placeholder="Email"
               onChange={handleChange}
-              className="w-full leading-10 p-1 pr-3 pl-10 focus:ring-vermilion-400 focus:ring-2 focus:outline-none placeholder:text-vermilion-500 dark:placeholder:text-jet-400
+              className="w-full p-1 pl-10 pr-3 leading-10 placeholder:text-vermilion-500 focus:outline-none focus:ring-2 focus:ring-vermilion-400 dark:placeholder:text-jet-400
               dark:focus:ring-asparagus-400"
             />
           </div>
@@ -116,7 +116,7 @@ export default function ContactForm() {
             </label>
             <Icon
               icon="bi:chat-dots"
-              className="text-xl absolute top-[2.35rem] text-vermilion-400 left-3 dark:text-jet-400"
+              className="absolute left-3 top-[2.35rem] text-xl text-vermilion-400 dark:text-jet-400"
             />
             <textarea
               name="message"
@@ -125,22 +125,22 @@ export default function ContactForm() {
               placeholder="Message"
               rows={4}
               onChange={handleChange}
-              className="w-full leading-6 py-3 pr-3 pl-10 focus:ring-vermilion-400 focus:ring-2 focus:outline-none placeholder:text-vermilion-500 dark:placeholder:text-jet-400
+              className="w-full py-3 pl-10 pr-3 leading-6 placeholder:text-vermilion-500 focus:outline-none focus:ring-2 focus:ring-vermilion-400 dark:placeholder:text-jet-400
               dark:focus:ring-asparagus-400"
             />
           </div>
           {showSuccessMsg && (
-            <div className="absolute inset-0 top-5 left-0 bg-jet-500 text-pearl-bush-500 grid place-items-center dark:bg-pearl-bush-500 dark:text-jet-500">
+            <div className="absolute inset-0 left-0 top-5 grid place-items-center bg-jet-500 text-pearl-bush-500 dark:bg-pearl-bush-500 dark:text-jet-500">
               <div>
                 <Icon
                   icon="bi:check-circle"
-                  className="text-5xl mx-auto mb-3"
+                  className="mx-auto mb-3 text-5xl"
                 />
-                <p className="text-lg my-3">Your message has been sent!</p>
+                <p className="my-3 text-lg">Your message has been sent!</p>
                 <button
                   type="button"
                   onClick={() => setShowSuccessMsg(false)}
-                  className="mx-auto border-pearl-bush-500 border flex items-center p-2 px-3 gap-2 dark:border-jet-500 dark:hover:bg-pearl-bush-600 hover:bg-jet-400"
+                  className="mx-auto flex items-center gap-2 border border-pearl-bush-500 p-2 px-3 hover:bg-jet-400 dark:border-jet-500 dark:hover:bg-pearl-bush-600"
                 >
                   Send Another Message
                 </button>
@@ -148,21 +148,21 @@ export default function ContactForm() {
             </div>
           )}
         </div>
-        <p className="h-10 text-center pt-3 text-vermilion-500 ">
+        <p className="h-10 pt-3 text-center text-vermilion-500 ">
           {formError && formError}
         </p>
-        <div className="flex gap-2 mt-5 justify-center">
+        <div className="mt-5 flex justify-center gap-2">
           <button
             type="button"
             onClick={handleReset}
-            className="border-jet-500 border flex items-center p-2 px-3 gap-2 dark:border-pearl-bush-500 dark:hover:bg-jet-400 hover:bg-jet-100"
+            className="flex items-center gap-2 border border-jet-500 p-2 px-3 hover:bg-jet-100 dark:border-pearl-bush-500 dark:hover:bg-jet-400"
           >
             <Icon icon="bi:arrow-counterclockwise" />
             Reset
           </button>
           <button
             type="submit"
-            className="bg-jet-500 text-pearl-bush-500 flex items-center p-2 px-3 gap-2 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+            className="flex items-center gap-2 bg-jet-500 p-2 px-3 text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
           >
             <Icon icon="bi:send" />
             Send Message

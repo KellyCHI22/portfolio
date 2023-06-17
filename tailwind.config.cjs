@@ -66,5 +66,3 @@ module.exports = {
   },
   plugins: [],
 };
-
-// font-family: 'Red Hat Display Variable', sans-serif;

@@ -3,6 +3,7 @@ import '@fontsource/righteous';
 import '@fontsource-variable/red-hat-display';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer.astro';
+import Icon from 'astro-icon';
 export interface Props {
   title: string;
 }
@@ -21,10 +22,16 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body
-    class="font-red-hat-display-variable bg-pearl-bush-500 border-8 border-vermilion-500 text-jet-500 dark:bg-jet-500 dark:text-pearl-bush-500 dark:border-asparagus-500"
+    class="border-8 border-vermilion-500 bg-pearl-bush-500 font-red-hat-display-variable text-jet-500 dark:border-asparagus-500 dark:bg-jet-500 dark:text-pearl-bush-500"
   >
     <Navbar client:only />
     <slot />
+    <a
+      href="#"
+      class="fixed bottom-5 right-5 h-12 w-12 bg-jet-500 p-2 text-pearl-bush-500 opacity-80 hover:opacity-100 dark:bg-pearl-bush-500 dark:text-jet-500"
+    >
+      <Icon name="ph:arrow-up-bold" />
+    </a>
     <Footer />
   </body>
 </html>

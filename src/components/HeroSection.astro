@@ -1,54 +1,52 @@
 ---
-import resumePDF from '../images/Kelly_CHI_resume_ ENG_2023_web_dev.pdf';
 import { Icon } from 'astro-icon';
 ---
 
 <section id="home" class="relative h-screen px-7">
   <Icon
     name="mobile_bg_light"
-    class="w-[250px] absolute top-20 left-24 dark:hidden"
+    class="absolute left-24 top-20 w-[250px] dark:hidden"
   />
   <Icon
     name="mobile_bg_dark"
-    class="w-[250px] absolute top-20 left-24 hidden dark:inline"
+    class="absolute left-24 top-20 hidden w-[250px] dark:inline"
   />
-  <h1 class="text-8xl font-righteous absolute top-48 left-7 dark:text-white">
+  <h1 class="absolute left-7 top-48 font-righteous text-8xl dark:text-white">
     Kelly<br /> CHI
   </h1>
 
-  <h2 class="text-3xl font-thin pt-[25rem]">Front End Developer</h2>
-  <p class="font-thin my-5 mr-5">
+  <h2 class="pt-[25rem] text-3xl font-thin">Front End Developer</h2>
+  <p class="my-5 mr-5 font-thin">
     I’m a front-end developer who loves building user-friendly websites and web
     apps, enjoys writing documentation and loves helping people learn how to
     code.
   </p>
-  <div class="my-8 space-x-4 flex items-center">
+  <div class="my-8 flex items-center space-x-4">
     <a
       href="https://github.com/KellyCHI22"
       target="_blank"
-      class="inline-block p-2 text-2xl bg-jet-500 rounded-full text-pearl-bush-500 dark:bg-pearl-bush-500 dark:text-jet-500 hover:bg-jet-400 dark:hover:bg-pearl-bush-600"
+      class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
     >
       <Icon name="mdi:github" class="w-9" />
     </a>
     <a
       href="https://linkedin.com/in/kelly-chi-front-end"
       target="_blank"
-      class="inline-block p-2 text-2xl bg-jet-500 rounded-full text-pearl-bush-500 dark:bg-pearl-bush-500 dark:text-jet-500 hover:bg-jet-400 dark:hover:bg-pearl-bush-600"
+      class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
     >
       <Icon name="mdi:linkedin" class="w-9" />
     </a>
     <a
-      href={resumePDF}
+      href="https://drive.google.com/file/d/1iLSw5IqqPYPDXH8jqj2lsFxyoilebgkj/view"
       target="_blank"
-      class="w-[3.25rem] h-[3.25rem] text-2xl bg-jet-500 rounded-full text-pearl-bush-500 dark:bg-pearl-bush-500 dark:text-jet-500 hover:bg-jet-400 dark:hover:bg-pearl-bush-600 grid place-items-center"
+      class="grid h-[3.25rem] w-[3.25rem] place-items-center rounded-full bg-jet-500 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
     >
       <p class="font-extrabold">CV</p>
-      <!-- <Icon name="mdi:resume" class="w-9" /> -->
     </a>
     <a
       href="mailto: chihsinting@gmail.com"
       target="_blank"
-      class="inline-block p-2 text-2xl bg-jet-500 rounded-full text-pearl-bush-500 dark:bg-pearl-bush-500 dark:text-jet-500 hover:bg-jet-400 dark:hover:bg-pearl-bush-600"
+      class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
     >
       <Icon name="ph:envelope" class="w-9" />
     </a>

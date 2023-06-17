@@ -48,18 +48,18 @@ const technologies: Tech[] = [
 
 <section class="pt-12">
   <h3
-    class="w-fit mb-8 font-righteous text-3xl mx-auto border-b-4 border-vermilion-500 dark:border-asparagus-500"
+    class="mx-auto mb-8 w-fit border-b-4 border-vermilion-500 font-righteous text-3xl dark:border-asparagus-500"
   >
     Tooling
   </h3>
-  <div class="grid grid-cols-3 mx-5 gap-y-6 gap-x-4">
+  <div class="mx-5 grid grid-cols-3 gap-x-4 gap-y-6">
     {
       technologies.map((tech) => (
         <div class="flex flex-col items-center">
-          <div class="p-5 rounded-full w-fit text-jet-500 bg-white dark:text-pearl-bush-500 dark:bg-pearl-bush-500">
+          <div class="w-fit rounded-full bg-white p-5 text-jet-500 dark:bg-pearl-bush-500 dark:text-pearl-bush-500">
             <Icon name={tech.icon} class="w-10 dark:text-jet-500" />
           </div>
-          <p class="font-light mt-2 text-center leading-5">{tech.name}</p>
+          <p class="mt-2 text-center font-light leading-5">{tech.name}</p>
         </div>
       ))
     }

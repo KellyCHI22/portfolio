@@ -28,7 +28,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={handleClick}
-      className="p-3 text-2xl bg-jet-500 rounded-full text-pearl-bush-500 dark:bg-pearl-bush-500 dark:text-jet-500"
+      className="rounded-full bg-jet-500 p-3 text-2xl text-pearl-bush-500 dark:bg-pearl-bush-500 dark:text-jet-500"
     >
       {theme === 'light' ? <BsFillMoonStarsFill /> : <BsFillSunFill />}
     </button>

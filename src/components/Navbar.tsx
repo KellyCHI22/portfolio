@@ -12,35 +12,35 @@ export default function Navbar() {
     <>
       {showMenu && (
         <div
-          className="backdrop-blur w-screen h-screen fixed top-0 left-0 z-10"
+          className="fixed left-0 top-0 z-10 h-screen w-screen backdrop-blur"
           onClick={handleShowMenu}
         />
       )}
 
       <nav
         className={clsx(
-          'fixed bg-pearl-bush-500  dark:bg-jet-500 dark:text-pearl-bush-500 z-20',
+          'fixed z-20  bg-pearl-bush-500 dark:bg-jet-500 dark:text-pearl-bush-500',
           {
-            'border-8 border-vermilion-500 top-0 left-0 w-screen dark:border-asparagus-500':
+            'left-0 top-0 w-screen border-8 border-vermilion-500 dark:border-asparagus-500':
               showMenu,
-            'border-t-8 top-0 border-vermilion-500 dark:border-asparagus-500 left-[8px] w-[calc(100vw-16px)]':
+            'left-[8px] top-0 w-[calc(100vw-16px)] border-t-8 border-vermilion-500 dark:border-asparagus-500':
               !showMenu,
           }
         )}
       >
-        <div className="flex justify-between p-3 items-center">
+        <div className="flex items-center justify-between p-3">
           <a href="#">
             <img id="logo" src={`/logo-${logoTheme}.svg`} />
           </a>
 
           {showMenu ? (
             <BsX
-              className="text-5xl block cursor-pointer"
+              className="block cursor-pointer text-5xl"
               onClick={handleShowMenu}
             />
           ) : (
             <BsList
-              className="text-4xl block m-1 cursor-pointer"
+              className="m-1 block cursor-pointer text-4xl"
               onClick={handleShowMenu}
             />
           )}
@@ -48,11 +48,11 @@ export default function Navbar() {
         {showMenu ? (
           <>
             <div>
-              <ul className="text-center space-y-5 text-lg">
+              <ul className="space-y-5 text-center text-lg">
                 <li onClick={handleShowMenu}>
                   <a
                     href="#"
-                    className="font-semibold border-b-4 border-pearl-bush-500 hover:border-vermilion-500
+                    className="border-b-4 border-pearl-bush-500 font-semibold hover:border-vermilion-500
                   dark:border-jet-500
                   dark:hover:border-asparagus-500"
                   >
@@ -62,7 +62,7 @@ export default function Navbar() {
                 <li onClick={handleShowMenu}>
                   <a
                     href="#projects"
-                    className="font-semibold border-b-4 border-pearl-bush-500 hover:border-vermilion-500 dark:border-jet-500
+                    className="border-b-4 border-pearl-bush-500 font-semibold hover:border-vermilion-500 dark:border-jet-500
                   dark:hover:border-asparagus-500"
                   >
                     Projects
@@ -71,7 +71,7 @@ export default function Navbar() {
                 <li onClick={handleShowMenu}>
                   <a
                     href="#resume"
-                    className="font-semibold border-b-4 border-pearl-bush-500 hover:border-vermilion-500 dark:border-jet-500
+                    className="border-b-4 border-pearl-bush-500 font-semibold hover:border-vermilion-500 dark:border-jet-500
                   dark:hover:border-asparagus-500"
                   >
                     Resume
@@ -80,7 +80,7 @@ export default function Navbar() {
                 <li onClick={handleShowMenu}>
                   <a
                     href="#contact"
-                    className="font-semibold border-b-4 border-pearl-bush-500 hover:border-vermilion-500 dark:border-jet-500
+                    className="border-b-4 border-pearl-bush-500 font-semibold hover:border-vermilion-500 dark:border-jet-500
                   dark:hover:border-asparagus-500"
                   >
                     Contact
@@ -88,7 +88,7 @@ export default function Navbar() {
                 </li>
               </ul>
             </div>
-            <div className="flex justify-between items-end p-3">
+            <div className="flex items-end justify-between p-3">
               <p>ENG | CN</p>
               <ThemeToggle />
             </div>
