@@ -92,18 +92,20 @@ export default function Navbar() {
             </div>
 
             {showMenu ? (
-              <button aria-label="close menu" onClick={handleShowMenu}>
-                <BsX
-                  aria-label="close icon"
-                  className="block cursor-pointer text-5xl lg:hidden"
-                />
+              <button
+                aria-label="close menu"
+                onClick={handleShowMenu}
+                className="cursor-pointer text-5xl lg:hidden"
+              >
+                <BsX aria-label="close icon" />
               </button>
             ) : (
-              <button aria-label="open menu" onClick={handleShowMenu}>
-                <BsList
-                  aria-label="menu icon"
-                  className="m-1 block cursor-pointer text-4xl lg:hidden"
-                />
+              <button
+                aria-label="open menu"
+                onClick={handleShowMenu}
+                className="m-1 block cursor-pointer text-4xl lg:hidden"
+              >
+                <BsList aria-label="menu icon" />
               </button>
             )}
           </div>
