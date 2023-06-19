@@ -46,7 +46,7 @@ const technologies: Tech[] = [
 ];
 ---
 
-<section class="pt-12">
+<section aria-label="tooling section" class="pt-12">
   <h3
     class="mx-auto mb-8 w-fit border-b-4 border-vermilion-500 font-righteous text-3xl dark:border-asparagus-500 lg:text-4xl"
   >
@@ -59,7 +59,11 @@ const technologies: Tech[] = [
       technologies.map((tech) => (
         <div class="flex flex-col items-center">
           <div class="w-fit rounded-full bg-white p-5 text-jet-500 dark:bg-pearl-bush-500 dark:text-pearl-bush-500">
-            <Icon name={tech.icon} class="w-10 dark:text-jet-500" />
+            <Icon
+              aria-label={`${tech.name} icon`}
+              name={tech.icon}
+              class="w-10 dark:text-jet-500"
+            />
           </div>
           <p class="mt-2 text-center font-light leading-5">{tech.name}</p>
         </div>
@@ -70,7 +74,11 @@ const technologies: Tech[] = [
       <div
         class="w-fit rounded-full bg-white p-5 text-jet-500 dark:bg-pearl-bush-500 dark:text-pearl-bush-500"
       >
-        <Icon name="mdi:firebase" class="w-10 dark:text-jet-500" />
+        <Icon
+          aria-label="firebase icon"
+          name="mdi:firebase"
+          class="w-10 dark:text-jet-500"
+        />
       </div>
       <p class="mt-2 text-center font-light leading-5">Firebase</p>
     </div>

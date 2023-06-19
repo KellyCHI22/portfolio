@@ -14,6 +14,7 @@ export default function Navbar() {
     <>
       {showMenu && (
         <div
+          aria-label="close menu"
           className="fixed left-0 top-0 z-10 h-screen w-screen backdrop-blur"
           onClick={handleShowMenu}
         />
@@ -31,14 +32,19 @@ export default function Navbar() {
           )}
         >
           <div className="flex items-center justify-between p-3">
-            <a href="#">
-              <img id="logo" src={theme === 'dark' ? LogoLight : LogoDark} />
+            <a href="#" aria-label="Navigate to home section">
+              <img
+                id="logo"
+                alt="logo"
+                src={theme === 'dark' ? LogoLight : LogoDark}
+              />
             </a>
             <div className="hidden lg:block">
               <ul className="flex gap-6">
                 <li>
                   <a
                     href="#"
+                    aria-label="Navigate to home section"
                     className="border-b-4 border-pearl-bush-500 font-semibold hover:border-vermilion-500
                   dark:border-jet-500
                   dark:hover:border-asparagus-500"
@@ -49,6 +55,7 @@ export default function Navbar() {
                 <li>
                   <a
                     href="#projects"
+                    aria-label="Navigate to projects section"
                     className="border-b-4 border-pearl-bush-500 font-semibold hover:border-vermilion-500 dark:border-jet-500
                   dark:hover:border-asparagus-500"
                   >
@@ -58,6 +65,7 @@ export default function Navbar() {
                 <li>
                   <a
                     href="#resume"
+                    aria-label="Navigate to resume section"
                     className="border-b-4 border-pearl-bush-500 font-semibold hover:border-vermilion-500 dark:border-jet-500
                   dark:hover:border-asparagus-500"
                   >
@@ -67,6 +75,7 @@ export default function Navbar() {
                 <li>
                   <a
                     href="#contact"
+                    aria-label="Navigate to contact section"
                     className="border-b-4 border-pearl-bush-500 font-semibold hover:border-vermilion-500 dark:border-jet-500
                   dark:hover:border-asparagus-500"
                   >
@@ -83,15 +92,19 @@ export default function Navbar() {
             </div>
 
             {showMenu ? (
-              <BsX
-                className="block cursor-pointer text-5xl lg:hidden"
-                onClick={handleShowMenu}
-              />
+              <button aria-label="close menu" onClick={handleShowMenu}>
+                <BsX
+                  aria-label="close icon"
+                  className="block cursor-pointer text-5xl lg:hidden"
+                />
+              </button>
             ) : (
-              <BsList
-                className="m-1 block cursor-pointer text-4xl lg:hidden"
-                onClick={handleShowMenu}
-              />
+              <button aria-label="open menu" onClick={handleShowMenu}>
+                <BsList
+                  aria-label="menu icon"
+                  className="m-1 block cursor-pointer text-4xl lg:hidden"
+                />
+              </button>
             )}
           </div>
           {showMenu ? (
@@ -101,6 +114,7 @@ export default function Navbar() {
                   <li onClick={handleShowMenu}>
                     <a
                       href="#"
+                      aria-label="Navigate to home section"
                       className="border-b-4 border-pearl-bush-500 font-semibold hover:border-vermilion-500
                   dark:border-jet-500
                   dark:hover:border-asparagus-500"
@@ -111,6 +125,7 @@ export default function Navbar() {
                   <li onClick={handleShowMenu}>
                     <a
                       href="#projects"
+                      aria-label="Navigate to projects section"
                       className="border-b-4 border-pearl-bush-500 font-semibold hover:border-vermilion-500 dark:border-jet-500
                   dark:hover:border-asparagus-500"
                     >
@@ -120,6 +135,7 @@ export default function Navbar() {
                   <li onClick={handleShowMenu}>
                     <a
                       href="#resume"
+                      aria-label="Navigate to resume section"
                       className="border-b-4 border-pearl-bush-500 font-semibold hover:border-vermilion-500 dark:border-jet-500
                   dark:hover:border-asparagus-500"
                     >
@@ -129,6 +145,7 @@ export default function Navbar() {
                   <li onClick={handleShowMenu}>
                     <a
                       href="#contact"
+                      aria-label="Navigate to contact section"
                       className="border-b-4 border-pearl-bush-500 font-semibold hover:border-vermilion-500 dark:border-jet-500
                   dark:hover:border-asparagus-500"
                     >

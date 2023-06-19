@@ -76,6 +76,7 @@ export default function ContactForm() {
             Name
           </label>
           <Icon
+            aria-label="person icon"
             icon="bi:person-circle"
             className="absolute left-3 top-[2.35rem] text-xl text-vermilion-400 dark:text-jet-400"
           />
@@ -95,6 +96,7 @@ export default function ContactForm() {
             Email
           </label>
           <Icon
+            aria-label="email icon"
             icon="bi:envelope"
             className="absolute left-3 top-[2.35rem] text-xl text-vermilion-400 dark:text-jet-400"
           />
@@ -114,6 +116,7 @@ export default function ContactForm() {
             Message
           </label>
           <Icon
+            aria-label="message icon"
             icon="bi:chat-dots"
             className="absolute left-3 top-[2.35rem] text-xl text-vermilion-400 dark:text-jet-400"
           />
@@ -131,10 +134,15 @@ export default function ContactForm() {
         {showSuccessMsg && (
           <div className="absolute inset-0 left-0 top-5 grid place-items-center bg-jet-500 text-pearl-bush-500 dark:bg-pearl-bush-500 dark:text-jet-500">
             <div>
-              <Icon icon="bi:check-circle" className="mx-auto mb-3 text-5xl" />
+              <Icon
+                aria-label="success check icon"
+                icon="bi:check-circle"
+                className="mx-auto mb-3 text-5xl"
+              />
               <p className="my-3 text-lg">Your message has been sent!</p>
               <button
                 type="button"
+                aria-label="send another message"
                 onClick={() => setShowSuccessMsg(false)}
                 className="mx-auto flex items-center gap-2 border border-pearl-bush-500 p-2 px-3 hover:bg-jet-400 dark:border-jet-500 dark:hover:bg-pearl-bush-600"
               >
@@ -150,17 +158,19 @@ export default function ContactForm() {
       <div className="mt-5 flex justify-center gap-2 md:gap-5 lg:justify-end">
         <button
           type="button"
+          aria-label="reset form"
           onClick={handleReset}
           className="flex items-center gap-2 border border-jet-500 p-2 px-3 hover:bg-jet-100 dark:border-pearl-bush-500 dark:hover:bg-jet-400"
         >
-          <Icon icon="bi:arrow-counterclockwise" />
+          <Icon aria-label="reset icon" icon="bi:arrow-counterclockwise" />
           Reset
         </button>
         <button
           type="submit"
+          aria-label="submit form"
           className="flex items-center gap-2 bg-jet-500 p-2 px-3 text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
         >
-          <Icon icon="bi:send" />
+          <Icon aria-label="send message icon" icon="bi:send" />
           Send Message
         </button>
       </div>

@@ -17,8 +17,12 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/logo-light.svg" />
     <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="I love building beautiful and intuitive web apps."
+    />
+    <link rel="icon" type="image/svg+xml" href="/logo-light.svg" />
     <title>{title}</title>
   </head>
   <body
@@ -28,9 +32,10 @@ const { title } = Astro.props;
     <slot />
     <a
       href="#"
+      aria-label="Back to top button"
       class="fixed bottom-5 right-5 h-12 w-12 bg-jet-500 p-2 text-pearl-bush-500 opacity-80 hover:opacity-100 dark:bg-pearl-bush-500 dark:text-jet-500"
     >
-      <Icon name="ph:arrow-up-bold" />
+      <Icon aria-label="arrow up icon" name="ph:arrow-up-bold" />
     </a>
     <Footer />
   </body>

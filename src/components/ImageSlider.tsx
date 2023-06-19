@@ -17,7 +17,7 @@ export default function ImageSlider({ imagesData }: { imagesData: string[] }) {
   }
 
   return (
-    <div className="relative">
+    <div aria-label="image slider" className="relative">
       <div className="overflow-hidden">
         <div
           className="flex h-52 w-full transition-transform duration-500 ease-out lg:h-72"
@@ -37,6 +37,7 @@ export default function ImageSlider({ imagesData }: { imagesData: string[] }) {
         </div>
       </div>
       <button
+        aria-label="previous image"
         className="absolute left-2 top-[40%] grid place-items-center rounded-full bg-jet-500 p-[0.5] text-pearl-bush-500 opacity-70 hover:opacity-100"
         onClick={prevSlide}
       >
@@ -49,6 +50,7 @@ export default function ImageSlider({ imagesData }: { imagesData: string[] }) {
         {/* <IoIosArrowBack className="text-2xl" /> */}
       </button>
       <button
+        aria-label="next image"
         className="absolute right-2 top-[40%] grid place-items-center rounded-full bg-jet-500 p-[0.5] text-pearl-bush-500 opacity-70 hover:opacity-100"
         onClick={nextSlide}
       >

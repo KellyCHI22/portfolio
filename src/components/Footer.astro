@@ -3,20 +3,31 @@ import { Icon } from 'astro-icon';
 ---
 
 <footer
+  aria-label="footer"
   class="bg-vermilion-500 dark:bg-asparagus-500 md:bg-pearl-bush-500 md:dark:bg-jet-500"
 >
-  <Icon name="mobile_bg2_light" class="dark:hidden md:hidden" />
-  <Icon name="mobile_bg2_dark" class="hidden dark:inline md:dark:hidden" />
   <Icon
+    aria-label="mobile footer section light mode background"
+    name="mobile_bg2_light"
+    class="dark:hidden md:hidden"
+  />
+  <Icon
+    aria-label="mobile footer section light mode background"
+    name="mobile_bg2_dark"
+    class="hidden dark:inline md:dark:hidden"
+  />
+  <Icon
+    aria-label="laptop footer section light mode background"
     name="laptop_bg2_light"
     class="hidden border-b border-vermilion-500 md:block md:dark:hidden lg:hidden"
   />
   <Icon
+    aria-label="laptop footer section dark mode background"
     name="laptop_bg2_dark"
     class="hidden border-b border-asparagus-500 md:dark:block lg:dark:hidden"
   />
   <div
-    class="bg-vermilion-500 pb-2 pt-3 text-center font-thin text-pearl-bush-500 dark:bg-asparagus-500"
+    class="bg-vermilion-500 pb-2 pt-3 text-center font-thin text-white dark:bg-asparagus-500"
   >
     Designed in Figma and built with Astro <br class="md:hidden" /> @ Kelly CHI 2023
   </div>

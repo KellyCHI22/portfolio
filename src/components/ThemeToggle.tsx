@@ -28,10 +28,15 @@ export default function ThemeToggle() {
 
   return (
     <button
+      aria-label="switch theme"
       onClick={handleClick}
       className="rounded-full bg-jet-500 p-3 text-2xl text-pearl-bush-500 dark:bg-pearl-bush-500 dark:text-jet-500"
     >
-      {theme === 'light' ? <BsFillMoonStarsFill /> : <BsFillSunFill />}
+      {theme === 'light' ? (
+        <BsFillMoonStarsFill aria-label="moon icon" />
+      ) : (
+        <BsFillSunFill aria-label="sun icon" />
+      )}
     </button>
   );
 }
