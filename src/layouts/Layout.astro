@@ -36,6 +36,12 @@ const { title } = Astro.props;
   </body>
 </html>
 
+<style>
+  body::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+
 <script is:inline>
   // change favicon according to default system theme
   const favicon = document.querySelector('link[rel="icon"]');
