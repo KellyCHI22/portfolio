@@ -77,7 +77,7 @@ export default function Navbar() {
             </div>
             <div className="relative hidden lg:block">
               <span className="absolute right-12 top-3 w-28">
-                ENG | FR | CN
+                {/* ENG | FR | CN */}
               </span>
               <ThemeToggle />
             </div>
@@ -138,7 +138,7 @@ export default function Navbar() {
                 </ul>
               </div>
               <div className="flex items-end justify-between p-3">
-                <p>ENG | FR | CN</p>
+                <p></p>
                 <ThemeToggle />
               </div>
             </>

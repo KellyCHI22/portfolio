@@ -66,30 +66,25 @@ const projects: Project[] = [
               ))}
             </div>
             <p class="py-3">{project.description}</p>
-            <div class="flex flex-wrap gap-1 md:gap-2">
+            <div class="flex flex-wrap gap-2">
               <a
                 href={project.demo}
                 target="_blank"
                 class="flex items-center gap-2 bg-jet-500 p-2 px-3 text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
               >
-                <Icon name="mdi:eye" class="inline w-5" /> <span>Demo</span>
+                <Icon name="mdi:eye" class="inline w-5" />{' '}
+                <span>Live Demo</span>
               </a>
               <a
                 href={project.repo}
                 target="_blank"
-                class="flex items-center gap-2 bg-jet-500 p-2 px-3 text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+                class="flex items-center gap-2 border border-jet-500 p-2 px-3 hover:bg-jet-100 dark:border-pearl-bush-500 dark:hover:bg-jet-400"
               >
                 <>
                   <Icon name="mdi:github" class="inline w-5" />
                   <span>Repo</span>
                 </>
               </a>
-              <button class="flex items-center gap-2 border border-jet-500 p-2 px-3 hover:bg-jet-100 dark:border-pearl-bush-500 dark:hover:bg-jet-400">
-                <>
-                  <Icon name="ph:plus-bold" class="inline w-5" />
-                  <span>More</span>
-                </>
-              </button>
             </div>
           </div>
         </div>
