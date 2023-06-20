@@ -1,55 +1,82 @@
-# Astro Starter Kit: Basics
+<div align="center">
+  <img width="100" src="src/icons/desktop_bg_light.svg" /><img width="100" src="src/icons/desktop_bg_dark.svg" />
 
+# Portfolio v1
+
+</div>
+
+## 💡 Overview
+
+My first personal portfolio showcasing projects that I've built for the past few months. Designed in Figma and built with Astro.js.
+
+### 👀 Link: https://kellychi-dev.netlify.app
+
+### 🧩 Built with
+
+[![built with](https://skillicons.dev/icons?i=figma,astro,ts,react,redux,tailwind)](https://skillicons.dev)
+
+![](public/screenshots/Screenshot_1.jpg)
+
+![](public/screenshots/Screenshot_2.jpg)
+
+![](public/screenshots/mobile-preview.png)
+
+![](public/screenshots/performance.png)
+
+## 🚀 Run locally
+
+1. Clone this project to your local environment
+
+```bash
+$ git clone "https://github.com/KellyCHI22/portfolio.git"
 ```
-npm create astro@latest -- --template basics
+
+2. Open the project and type the following command in your terminal
+
+```bash
+$ npm install
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+3. Continue with this command after finishing installing all the packages
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
-
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+$ npm run dev
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+4. Open your browser and navigate to the following path: `http://localhost:3000/`
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+5. Type the following command to stop the dev server
 
-Any static assets, like images, can be placed in the `public/` directory.
+```bash
+ctrl + c
+```
 
-## 🧞 Commands
+## 💻 Tech Stack
 
-All commands are run from the root of the project, from a terminal:
+### Core Technologies
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- Astro 2.6.4
+- React 18.2.0
+- Tailwind CSS 3.3.2
 
-## 👀 Want to learn more?
+### Packages
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- astro-icon 0.8.1
+- astro-i18next 1.0.0-beta.21
+- clsx 1.2.1
+- @iconify/react 4.1.0
+
+### 🤯 Development Process
+
+<details>
+<summary>Click me</summary>
+
+#### Design file
+
+![](public/screenshots/design_file.jpg)
+
+</details>
+
+## 🔒 License
+
+Copyright Notice and Statement: currently not offering any license. Permission only to view and download.
