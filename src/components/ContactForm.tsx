@@ -29,7 +29,7 @@ export default function ContactForm() {
       errorEmail: '⚠️ Email is required',
       errorMessage: '⚠️ Message is required',
     },
-    '/zh': {
+    '/zh/': {
       name: '名稱',
       email: '電子郵件地址',
       message: '內容',
@@ -41,7 +41,7 @@ export default function ContactForm() {
       errorEmail: '⚠️ 電子郵件地址不可空白',
       errorMessage: '⚠️ 內容不可空白',
     },
-    '/fr': {
+    '/fr/': {
       name: 'Nom et prénom',
       email: 'Adresse email',
       message: 'Votre message',

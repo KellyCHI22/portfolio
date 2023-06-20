@@ -20,7 +20,7 @@ export default function Navbar() {
       chinese: 'Chinese',
       french: 'French',
     },
-    '/zh': {
+    '/zh/': {
       home: '首頁',
       projects: '專案作品',
       resume: '履歷',
@@ -29,7 +29,7 @@ export default function Navbar() {
       chinese: '中文',
       french: '法文',
     },
-    '/fr': {
+    '/fr/': {
       home: 'Accueil',
       projects: 'Projets',
       resume: 'CV',
