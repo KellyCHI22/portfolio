@@ -9,6 +9,7 @@ import twitter_1 from '../images/mockup_alpha_twitter_1.jpg';
 import twitter_mobile from '../images/mockup_alpha_twitter_mobile.jpg';
 import twitter_demo_1 from '../images/tweet-demo.gif';
 import twitter_demo_2 from '../images/reply-demo.gif';
+import { t } from 'i18next';
 
 type Project = {
   title: string;
@@ -49,7 +50,7 @@ const projects: Project[] = [
   <h3
     class="mx-auto mb-8 w-fit border-b-4 border-vermilion-500 font-righteous text-3xl dark:border-asparagus-500 lg:text-4xl"
   >
-    Projects
+    {t('projects.title')}
   </h3>
   <div class="space-y-12">
     {
@@ -69,7 +70,9 @@ const projects: Project[] = [
                 </span>
               ))}
             </div>
-            <p class="py-3">{project.description}</p>
+            <p class="py-3">
+              {t(`projects.project-description.${project.title}`)}
+            </p>
             <div class="flex flex-wrap gap-2">
               <a
                 href={project.demo}

@@ -2,6 +2,7 @@
 import resumePNG from '../images/Kelly_CHI_resume_ENG_2023_web_dev.png';
 import resumePDF from '../images/Kelly_CHI_resume_ ENG_2023_web_dev.pdf';
 import { Icon } from 'astro-icon';
+import { t } from 'i18next';
 ---
 
 <section
@@ -12,7 +13,7 @@ import { Icon } from 'astro-icon';
   <h3
     class="mx-auto mb-8 w-fit border-b-4 border-vermilion-500 font-righteous text-3xl dark:border-asparagus-500 lg:text-4xl"
   >
-    Resume
+    {t('resume.title')}
   </h3>
   <div class="md:flex md:items-center md:gap-5 lg:justify-center">
     <div class="md:flex-1 lg:flex-initial">
@@ -35,7 +36,7 @@ import { Icon } from 'astro-icon';
           name="mdi:file-download"
           class="inline w-5"
         />
-        Download</a
+        {t('resume.download')}</a
       >
       <a
         href="https://drive.google.com/file/d/1Uql1L0nbClKiYoY_HqEK8fXsTfcOd1oA/view"
@@ -48,7 +49,7 @@ import { Icon } from 'astro-icon';
           name="tabler:external-link"
           class="inline w-5"
         />
-        View Online</a
+        {t('resume.view-online')}</a
       >
     </div>
   </div>

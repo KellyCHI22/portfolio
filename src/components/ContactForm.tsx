@@ -15,6 +15,45 @@ export default function ContactForm() {
   });
   const [formError, setFormError] = useState('');
   const [showSuccessMsg, setShowSuccessMsg] = useState(false);
+  const pathname = window.location.pathname;
+  const translation = {
+    '/': {
+      name: 'Name',
+      email: 'Email',
+      message: 'Message',
+      successMessage: 'Your message has been sent!',
+      anotherMessage: 'Send Another Message',
+      reset: 'Reset',
+      submit: 'Send Message',
+      errorName: '⚠️ Name is required',
+      errorEmail: '⚠️ Email is required',
+      errorMessage: '⚠️ Message is required',
+    },
+    '/zh': {
+      name: '名稱',
+      email: '電子郵件地址',
+      message: '內容',
+      successMessage: '您的訊息已成功寄出!',
+      anotherMessage: '發送其他訊息',
+      reset: '重設',
+      submit: '確認送出',
+      errorName: '⚠️ 名稱不可空白',
+      errorEmail: '⚠️ 電子郵件地址不可空白',
+      errorMessage: '⚠️ 內容不可空白',
+    },
+    '/fr': {
+      name: 'Nom et prénom',
+      email: 'Adresse email',
+      message: 'Votre message',
+      successMessage: 'Votre message a été envoyé !',
+      anotherMessage: 'Envoyer un autre message',
+      reset: 'Annuler',
+      submit: 'Envoyer',
+      errorName: '⚠️ Nom est obligatoire',
+      errorEmail: '⚠️ Email est obligatoire',
+      errorMessage: '⚠️ Message est obligatoire',
+    },
+  };
 
   const handleChange = (
     e:
@@ -40,13 +79,13 @@ export default function ContactForm() {
   const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
     if (formData.name.trim().length === 0) {
-      return setFormError('⚠️ Name is required');
+      return setFormError(translation[pathname].errorName);
     }
     if (formData.email.trim().length === 0) {
-      return setFormError('⚠️ Email is required');
+      return setFormError(translation[pathname].errorEmail);
     }
     if (formData.message.trim().length === 0) {
-      return setFormError('⚠️ Message is required');
+      return setFormError(translation[pathname].errorMessage);
     } else {
       setFormError('');
       fetch('/', {
@@ -73,7 +112,7 @@ export default function ContactForm() {
       <div className="relative dark:text-jet-500">
         <div className="relative">
           <label htmlFor="name" className="opacity-0">
-            Name
+            {translation[pathname].name}
           </label>
           <Icon
             aria-label="person icon"
@@ -85,7 +124,7 @@ export default function ContactForm() {
             name="name"
             id="name"
             value={formData.name}
-            placeholder="Name"
+            placeholder={translation[pathname].name}
             onChange={handleChange}
             className="w-full p-1 pl-10 pr-3 leading-10 placeholder:text-vermilion-500 focus:outline-none focus:ring-2 focus:ring-vermilion-400 dark:placeholder:text-jet-400
               dark:focus:ring-asparagus-400"
@@ -93,7 +132,7 @@ export default function ContactForm() {
         </div>
         <div className="relative">
           <label htmlFor="email" className="opacity-0">
-            Email
+            {translation[pathname].email}
           </label>
           <Icon
             aria-label="email icon"
@@ -105,7 +144,7 @@ export default function ContactForm() {
             name="email"
             id="email"
             value={formData.email}
-            placeholder="Email"
+            placeholder={translation[pathname].email}
             onChange={handleChange}
             className="w-full p-1 pl-10 pr-3 leading-10 placeholder:text-vermilion-500 focus:outline-none focus:ring-2 focus:ring-vermilion-400 dark:placeholder:text-jet-400
               dark:focus:ring-asparagus-400"
@@ -113,7 +152,7 @@ export default function ContactForm() {
         </div>
         <div className="relative">
           <label htmlFor="message" className="opacity-0">
-            Message
+            {translation[pathname].message}
           </label>
           <Icon
             aria-label="message icon"
@@ -124,7 +163,7 @@ export default function ContactForm() {
             name="message"
             id="message"
             value={formData.message}
-            placeholder="Message"
+            placeholder={translation[pathname].message}
             rows={4}
             onChange={handleChange}
             className="w-full py-3 pl-10 pr-3 leading-6 placeholder:text-vermilion-500 focus:outline-none focus:ring-2 focus:ring-vermilion-400 dark:placeholder:text-jet-400
@@ -139,14 +178,16 @@ export default function ContactForm() {
                 icon="bi:check-circle"
                 className="mx-auto mb-3 text-5xl"
               />
-              <p className="my-3 text-lg">Your message has been sent!</p>
+              <p className="my-3 text-lg">
+                {translation[pathname].successMessage}
+              </p>
               <button
                 type="button"
                 aria-label="send another message"
                 onClick={() => setShowSuccessMsg(false)}
                 className="mx-auto flex items-center gap-2 border border-pearl-bush-500 p-2 px-3 hover:bg-jet-400 dark:border-jet-500 dark:hover:bg-pearl-bush-600"
               >
-                Send Another Message
+                {translation[pathname].anotherMessage}
               </button>
             </div>
           </div>
@@ -163,7 +204,7 @@ export default function ContactForm() {
           className="flex items-center gap-2 border border-jet-500 p-2 px-3 hover:bg-jet-100 dark:border-pearl-bush-500 dark:hover:bg-jet-400"
         >
           <Icon aria-label="reset icon" icon="bi:arrow-counterclockwise" />
-          Reset
+          {translation[pathname].reset}
         </button>
         <button
           type="submit"
@@ -171,7 +212,7 @@ export default function ContactForm() {
           className="flex items-center gap-2 bg-jet-500 p-2 px-3 text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
         >
           <Icon aria-label="send message icon" icon="bi:send" />
-          Send Message
+          {translation[pathname].submit}
         </button>
       </div>
     </form>

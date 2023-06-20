@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "title": "Front End Developer"
+  },
+  "tooling": {
+    "title": "Tooling"
+  },
+  "projects": {
+    "title": "Projects",
+    "project-description": {
+      "HowTo": "A SPA website which lets users to discover and craft unique step-by-step tutorials. Designed and developed from scratch without any guidance in 8 one week sprints.",
+      "Alpha Twitter": "A collaborative simple Twitter clone with front-end, back-end trainees at Alpha Camp. Completed within 2 weeks using Agile development methodology."
+    }
+  },
+  "resume": {
+    "title": "Resume",
+    "download": "Download",
+    "view-online": "View Online"
+  },
+  "contact": {
+    "title": "Contact",
+    "find-me-on": "Find me on",
+    "leave-message": "Or leave a message..."
+  }
+}

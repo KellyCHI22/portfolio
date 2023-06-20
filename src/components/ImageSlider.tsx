@@ -47,7 +47,6 @@ export default function ImageSlider({ imagesData }: { imagesData: string[] }) {
           className="p-1"
           loading="lazy"
         />
-        {/* <IoIosArrowBack className="text-2xl" /> */}
       </button>
       <button
         aria-label="next image"
@@ -60,7 +59,6 @@ export default function ImageSlider({ imagesData }: { imagesData: string[] }) {
           className="p-1"
           loading="lazy"
         />
-        {/* <IoIosArrowForward className="text-2xl" /> */}
       </button>
       <div className="mt-3 flex w-full justify-center gap-3">
         {Array.from(imagesData).map((image, index) => {

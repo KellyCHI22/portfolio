@@ -1,5 +1,6 @@
 ---
 import { Icon } from 'astro-icon';
+import { t } from 'i18next';
 ---
 
 <section
@@ -35,12 +36,13 @@ import { Icon } from 'astro-icon';
     </h1>
 
     <h2 class="pt-[25rem] text-3xl font-thin md:pt-[22rem] lg:pt-3">
-      Front End Developer
+      {t('hero.title')}
     </h2>
-    <p class="my-5 mr-5 text-lg font-thin md:max-w-[30ch] lg:max-w-[40ch]">
-      I love building beautiful and intuitive web apps.
+    <p class="my-5 mr-5 text-lg font-thin md:max-w-[30ch] lg:max-w-[30ch]">
+      The joy of coding is about creating these virtual spaces and enchanting
+      them to behave as I would like. - Dan Abramov
     </p>
-    <div class="my-8 flex items-center space-x-4 lg:my-0 lg:pt-16">
+    <div class="my-8 flex items-center space-x-4 lg:my-0 lg:pt-10">
       <a
         href="https://github.com/KellyCHI22"
         aria-label="Link to Kelly CHI's github page"

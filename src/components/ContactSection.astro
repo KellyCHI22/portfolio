@@ -1,6 +1,7 @@
 ---
 import { Icon } from 'astro-icon';
 import ContactForm from './ContactForm';
+import { t } from 'i18next';
 ---
 
 <section
@@ -11,12 +12,12 @@ import ContactForm from './ContactForm';
   <h3
     class="mx-auto mb-12 w-fit border-b-4 border-vermilion-500 font-righteous text-3xl dark:border-asparagus-500 lg:text-4xl"
   >
-    Contact
+    {t('contact.title')}
   </h3>
   <div class="lg:flex lg:gap-12">
     <div class="lg:flex-[30%]">
       <h4 class="text-center font-righteous text-2xl lg:text-left">
-        Find me on
+        {t('contact.find-me-on')}
       </h4>
       <div
         class="my-5 flex items-center justify-center space-x-4 lg:justify-start"
@@ -55,11 +56,11 @@ import ContactForm from './ContactForm';
         </a>
       </div>
       <h4 class="mt-16 text-center font-righteous text-2xl lg:text-left">
-        Or leave a message...
+        {t('contact.leave-message')}
       </h4>
     </div>
     <div class="md:mx-16 lg:mx-0 lg:flex-[70%]">
-      <ContactForm client:visible />
+      <ContactForm client:only="react" />
     </div>
   </div>
 </section>

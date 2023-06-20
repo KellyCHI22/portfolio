@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "title": "前端工程師"
+  },
+  "tooling": {
+    "title": "工具箱"
+  },
+  "projects": {
+    "title": "專案作品",
+    "project-description": {
+      "HowTo": "個人獨立專案，靈感來自 wikiHow 這個百科式的生活指南網站。使用者可以在網站上探索並創造獨一無二的指南，並與其他創作者互動。本專案從設計到開發總共為期八週。",
+      "Alpha Twitter": "Alpha Camp 期末團體專案，採用前後分離模式開發，並使用敏捷軟體開發流程 (Agile) 在短短兩周內打造出具有一定規模的產品。"
+    }
+  },
+  "resume": {
+    "title": "履歷",
+    "download": "下載 PDF",
+    "view-online": "線上查看"
+  },
+  "contact": {
+    "title": "與我聯繫",
+    "find-me-on": "我的社群連結",
+    "leave-message": "也歡迎留言給我！"
+  }
+}
