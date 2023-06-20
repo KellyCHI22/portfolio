@@ -5,8 +5,6 @@ import clsx from 'clsx';
 import LogoDark from '../icons/logo-dark.svg';
 import LogoLight from '../icons/logo-light.svg';
 
-import { t } from 'i18next';
-
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
   const handleShowMenu = () => setShowMenu((prev) => !prev);
