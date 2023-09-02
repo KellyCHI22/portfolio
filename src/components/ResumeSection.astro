@@ -2,6 +2,7 @@
 import resumePNG from '../images/Kelly CHI resume EN 2023.png';
 import resumePDF from '../images/Kelly CHI resume ENG 2023.pdf';
 import { Icon } from 'astro-icon';
+import { Image } from 'astro:assets';
 import { t } from 'i18next';
 ---
 
@@ -17,11 +18,11 @@ import { t } from 'i18next';
   </h3>
   <div class="md:flex md:items-center md:gap-5 lg:justify-center">
     <div class="md:flex-1 lg:flex-initial">
-      <img
+      <Image
         src={resumePNG}
         alt="resume-kelly-chi"
         loading="lazy"
-        class="border-[0.5rem] border-jet-500 dark:border-asparagus-500 lg:h-[400px]"
+        class="border-[0.5rem] border-jet-500 dark:border-asparagus-500 lg:w-[350px]"
       />
     </div>
     <div class="mt-5 flex justify-center gap-2">

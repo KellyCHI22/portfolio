@@ -70,7 +70,7 @@ export default function Navbar() {
               <img
                 id="logo"
                 alt="logo"
-                src={theme === 'dark' ? LogoLight : LogoDark}
+                src={theme === 'dark' ? LogoLight.src : LogoDark.src}
               />
             </a>
             <div className="hidden lg:block">
@@ -122,9 +122,9 @@ export default function Navbar() {
               <span className="mr-5 flex gap-2">
                 <a href="/">{translation[pathname].english}</a>
                 {'|'}
-                <a href="/fr">{translation[pathname].french}</a>
+                <a href="/fr/">{translation[pathname].french}</a>
                 {'|'}
-                <a href="/zh">{translation[pathname].chinese}</a>
+                <a href="/zh/">{translation[pathname].chinese}</a>
               </span>
               <ThemeToggle />
             </div>
@@ -198,9 +198,9 @@ export default function Navbar() {
                 <p className="flex gap-2">
                   <a href="/">EN</a>
                   {'|'}
-                  <a href="/fr">FR</a>
+                  <a href="/fr/">FR</a>
                   {'|'}
-                  <a href="/zh">ZH</a>
+                  <a href="/zh/">ZH</a>
                 </p>
                 <ThemeToggle />
               </div>
