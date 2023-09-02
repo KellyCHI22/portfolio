@@ -55,7 +55,7 @@ ctrl + c
 
 ### Core Technologies
 
-- Astro 2.6.4
+- Astro 3.0.0
 - React 18.2.0
 - Tailwind CSS 3.3.2
 
