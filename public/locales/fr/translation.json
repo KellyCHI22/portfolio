@@ -8,7 +8,8 @@
   "projects": {
     "title": "Projets",
     "project-description": {
-      "HowTo": "Un site SPA permettant aux utilisateurs de découvrir et créer des tutoriels uniques. Conçu et développé à partir de zéro sans tutorat en 8 sprints d'une semaine.",
+      "Issuezy": "Une application de gestion de projets et de suivi de tickets qui favorise la collaboration entre utilisateurs. Le développement du site web client et du service API ont été réalisé en un mois en autonomie.",
+      "HowTo": "Un site SPA de création, de découverte, et de partage de tutoriels uniques entre utilisateurs. Conçu et développé à partir de zéro sans tutorat en huit sprints d'une semaine.",
       "Alpha Twitter": "Un clone de Twitter simplifié lors d'un projet collaboratif pour Alpha Camp. Développé en 2 semaines en utilisant la méthodologie Agile."
     }
   },

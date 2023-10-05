@@ -1,6 +1,10 @@
 ---
 import Icon from 'astro-icon';
 import ImageSlider from './ImageSlider';
+import issuezy_1 from '../images/mockup_issuezy.png';
+import issuezy_mobile from '../images/mockup_issuezy_mobile.png';
+import issuezy_demo_1 from '../images/issuezy_demo_1.gif';
+import issuezy_demo_2 from '../images/issuezy_demo_2.gif';
 import howto_1 from '../images/mockup_howto_1.jpg';
 import howto_mobile from '../images/mockup_howto_mobile.png';
 import howto_demo_1 from '../images/howto_demo_1.gif';
@@ -22,6 +26,28 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: 'Issuezy',
+    tags: [
+      'React',
+      'React Query',
+      'Shadcn-ui',
+      'Node.js',
+      'Express.js',
+      'Sequelize',
+      'MySQL',
+    ],
+    description:
+      'A full-stack project management and issue tracking app where you can keep your team organized.',
+    demo: 'https://issuezy.netlify.app',
+    repo: 'https://github.com/KellyCHI22/Issuezy',
+    images: [
+      issuezy_1.src,
+      issuezy_mobile.src,
+      issuezy_demo_1.src,
+      issuezy_demo_2.src,
+    ],
+  },
+  {
     title: 'HowTo',
     tags: ['TypeScript', 'React', 'Redux Toolkit', 'Tailwind CSS', 'Firebase'],
     description:
@@ -37,7 +63,12 @@ const projects: Project[] = [
       'A collaborative simple Twitter clone with front-end, back-end trainees at Alpha Camp. Completed within 2 weeks using Agile development methodology.',
     demo: 'https://weilocus.github.io/twitter/',
     repo: 'https://github.com/KellyCHI22/twitter',
-    images: [twitter_1.src, twitter_mobile.src, twitter_demo_1.src, twitter_demo_2.src],
+    images: [
+      twitter_1.src,
+      twitter_mobile.src,
+      twitter_demo_1.src,
+      twitter_demo_2.src,
+    ],
   },
 ];
 ---

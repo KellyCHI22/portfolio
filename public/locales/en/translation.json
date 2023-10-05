@@ -8,8 +8,9 @@
   "projects": {
     "title": "Projects",
     "project-description": {
-      "HowTo": "A SPA website which lets users to discover and craft unique step-by-step tutorials. Designed and developed from scratch without any guidance in 8 one week sprints.",
-      "Alpha Twitter": "A collaborative simple Twitter clone with front-end, back-end trainees at Alpha Camp. Completed within 2 weeks using Agile development methodology."
+      "Issuezy": "A full-stack project management and issue tracking app where you can keep your team organized. The first release of the project was completed in one month.",
+      "HowTo": "A SPA website for users to discover and craft unique step-by-step tutorials. Designed and developed from scratch without any guidance in eight one-week sprints.",
+      "Alpha Twitter": "A collaborative simple Twitter clone with front-end and back-end trainees at Alpha Camp. Completed within 2 weeks using Agile development methodology."
     }
   },
   "resume": {
