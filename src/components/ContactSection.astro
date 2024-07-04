@@ -1,66 +1,66 @@
 ---
-import { Icon } from 'astro-icon';
-import ContactForm from './ContactForm';
-import { t } from 'i18next';
+import { Icon } from "astro-icon";
+import ContactForm from "./ContactForm";
+import { t } from "i18next";
 ---
 
 <section
-  aria-label="contact section"
-  id="contact"
-  class="mx-7 mb-16 pt-24 lg:mx-48"
+	aria-label="contact section"
+	id="contact"
+	class="mx-7 mb-16 pt-24 lg:mx-48"
 >
-  <h3
-    class="mx-auto mb-12 w-fit border-b-4 border-vermilion-500 font-righteous text-3xl dark:border-asparagus-500 lg:text-4xl"
-  >
-    {t('contact.title')}
-  </h3>
-  <div class="lg:flex lg:gap-12">
-    <div class="lg:flex-[30%]">
-      <h4 class="text-center font-righteous text-2xl lg:text-left">
-        {t('contact.find-me-on')}
-      </h4>
-      <div
-        class="my-5 flex items-center justify-center space-x-4 lg:justify-start"
-      >
-        <a
-          href="https://github.com/KellyCHI22"
-          aria-label="Link to Kelly CHI's github page"
-          target="_blank"
-          class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
-        >
-          <Icon aria-label="github icon" name="mdi:github" class="w-9" />
-        </a>
-        <a
-          href="https://linkedin.com/in/kelly-chi-front-end"
-          aria-label="Link to Kelly CHI's linkedin page"
-          target="_blank"
-          class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
-        >
-          <Icon aria-label="linkedin icon" name="mdi:linkedin" class="w-9" />
-        </a>
-        <a
-          href="https://codepen.io/kellychi"
-          aria-label="Link to Kelly CHI's codepen page"
-          target="_blank"
-          class="grid h-[3.25rem] w-[3.25rem] place-items-center rounded-full bg-jet-500 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
-        >
-          <Icon aria-label="codepen icon" name="ri:codepen-fill" class="w-9" />
-        </a>
-        <a
-          href="mailto: chihsinting@gmail.com"
-          aria-label="Send email to Kelly CHI"
-          target="_blank"
-          class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
-        >
-          <Icon aria-label="email icon" name="ph:envelope" class="w-9" />
-        </a>
-      </div>
-      <h4 class="mt-16 text-center font-righteous text-2xl lg:text-left">
-        {t('contact.leave-message')}
-      </h4>
-    </div>
-    <div class="md:mx-16 lg:mx-0 lg:flex-[70%]">
-      <ContactForm client:only="react" />
-    </div>
-  </div>
+	<h3
+		class="mx-auto mb-12 w-fit border-b-4 border-vermilion-500 font-righteous text-3xl dark:border-asparagus-500 lg:text-4xl"
+	>
+		{t("contact.title")}
+	</h3>
+	<div class="lg:flex lg:gap-12">
+		<div class="lg:flex-[30%]">
+			<h4 class="text-center font-righteous text-2xl lg:text-left">
+				{t("contact.find-me-on")}
+			</h4>
+			<div
+				class="my-5 flex items-center justify-center space-x-4 lg:justify-start"
+			>
+				<a
+					href="https://github.com/KellyCHI22"
+					aria-label="Link to Kelly CHI's github page"
+					target="_blank"
+					class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+				>
+					<Icon aria-label="github icon" name="mdi:github" class="w-9" />
+				</a>
+				<a
+					href="https://linkedin.com/in/kelly-chi-front-end"
+					aria-label="Link to Kelly CHI's linkedin page"
+					target="_blank"
+					class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+				>
+					<Icon aria-label="linkedin icon" name="mdi:linkedin" class="w-9" />
+				</a>
+				<a
+					href="https://medium.com/@Kelly_CHI"
+					aria-label="Link to Kelly CHI's medium"
+					target="_blank"
+					class="grid h-[3.25rem] w-[3.25rem] place-items-center rounded-full bg-jet-500 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+				>
+					<Icon aria-label="medium icon" name="ri:medium-fill" class="w-9" />
+				</a>
+				<a
+					href="mailto: chihsinting@gmail.com"
+					aria-label="Send email to Kelly CHI"
+					target="_blank"
+					class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+				>
+					<Icon aria-label="email icon" name="ph:envelope" class="w-9" />
+				</a>
+			</div>
+			<h4 class="mt-16 text-center font-righteous text-2xl lg:text-left">
+				{t("contact.leave-message")}
+			</h4>
+		</div>
+		<div class="md:mx-16 lg:mx-0 lg:flex-[70%]">
+			<ContactForm client:only="react" />
+		</div>
+	</div>
 </section>
