@@ -13,7 +13,7 @@ My first personal portfolio showcasing projects that I've built for the past few
 
 ### 🧩 Built with
 
-[![built with](https://skillicons.dev/icons?i=figma,astro,ts,react,redux,tailwind)](https://skillicons.dev)
+[![built with](https://skillicons.dev/icons?i=figma,astro,ts,react,tailwind)](https://skillicons.dev)
 
 ![](public/screenshots/Screenshot_1.jpg)
 
