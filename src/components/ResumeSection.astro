@@ -1,57 +1,57 @@
 ---
-import resumePNG from '../images/Kelly CHI resume ENG 2023.png';
-import resumePDF from '../images/Kelly CHI resume ENG 2023.pdf';
-import { Icon } from 'astro-icon';
-import { Image } from 'astro:assets';
-import { t } from 'i18next';
+import resumePNG from "../images/Kelly CHI resume ENG 2024.png";
+import resumePDF from "../images/Kelly CHI resume ENG 2024.pdf";
+import { Icon } from "astro-icon";
+import { Image } from "astro:assets";
+import { t } from "i18next";
 ---
 
 <section
-  aria-label="resume section"
-  id="resume"
-  class="mx-7 mb-16 pt-24 md:mx-20 md:mb-0 lg:mx-64"
+	aria-label="resume section"
+	id="resume"
+	class="mx-7 mb-16 pt-24 md:mx-20 md:mb-0 lg:mx-64"
 >
-  <h3
-    class="mx-auto mb-8 w-fit border-b-4 border-vermilion-500 font-righteous text-3xl dark:border-asparagus-500 lg:text-4xl"
-  >
-    {t('resume.title')}
-  </h3>
-  <div class="md:flex md:items-center md:gap-5 lg:justify-center">
-    <div class="md:flex-1 lg:flex-initial">
-      <Image
-        src={resumePNG}
-        alt="resume-kelly-chi"
-        loading="lazy"
-        class="border-[0.5rem] border-jet-500 dark:border-asparagus-500 lg:w-[350px]"
-      />
-    </div>
-    <div class="mt-5 flex justify-center gap-2">
-      <a
-        href={resumePDF}
-        aria-label="Download resume PDF"
-        download="KellyCHI_Resume_2023"
-        class="flex items-center gap-2 bg-jet-500 p-2 px-3 text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
-      >
-        <Icon
-          aria-label="download file icon"
-          name="mdi:file-download"
-          class="inline w-5"
-        />
-        {t('resume.download')}</a
-      >
-      <a
-        href="https://drive.google.com/file/d/1Y6meaZV0rPtWfsV1pB9ryO8y87pSdHci/view"
-        aria-label="Link to Kelly CHI resume"
-        target="_blank"
-        class="flex items-center gap-2 border border-jet-500 p-2 px-3 hover:bg-jet-100 dark:border-pearl-bush-500 dark:hover:bg-jet-400"
-      >
-        <Icon
-          aria-label="view icon"
-          name="tabler:external-link"
-          class="inline w-5"
-        />
-        {t('resume.view-online')}</a
-      >
-    </div>
-  </div>
+	<h3
+		class="mx-auto mb-8 w-fit border-b-4 border-vermilion-500 font-righteous text-3xl dark:border-asparagus-500 lg:text-4xl"
+	>
+		{t("resume.title")}
+	</h3>
+	<div class="md:flex md:items-center md:gap-5 lg:justify-center">
+		<div class="md:flex-1 lg:flex-initial">
+			<Image
+				src={resumePNG}
+				alt="resume-kelly-chi"
+				loading="lazy"
+				class="border-[0.5rem] border-jet-500 dark:border-asparagus-500 lg:w-[350px]"
+			/>
+		</div>
+		<div class="mt-5 flex justify-center gap-2">
+			<a
+				href={resumePDF}
+				aria-label="Download resume PDF"
+				download="KellyCHI_Resume_2024"
+				class="flex items-center gap-2 bg-jet-500 p-2 px-3 text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+			>
+				<Icon
+					aria-label="download file icon"
+					name="mdi:file-download"
+					class="inline w-5"
+				/>
+				{t("resume.download")}</a
+			>
+			<a
+				href="https://drive.google.com/file/d/1FeuDSgNeqhc4cpneIENDOfHsqueV4N77/view"
+				aria-label="Link to Kelly CHI resume"
+				target="_blank"
+				class="flex items-center gap-2 border border-jet-500 p-2 px-3 hover:bg-jet-100 dark:border-pearl-bush-500 dark:hover:bg-jet-400"
+			>
+				<Icon
+					aria-label="view icon"
+					name="tabler:external-link"
+					class="inline w-5"
+				/>
+				{t("resume.view-online")}</a
+			>
+		</div>
+	</div>
 </section>

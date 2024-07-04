@@ -1,92 +1,92 @@
 ---
-import { Icon } from 'astro-icon';
-import { t } from 'i18next';
+import { Icon } from "astro-icon";
+import { t } from "i18next";
 ---
 
 <section
-  id="home"
-  aria-label="hero section"
-  class="relative h-screen px-7 md:h-auto md:px-12 lg:flex lg:h-screen lg:items-center lg:justify-center lg:gap-32 lg:px-36 lg:pt-16"
+	id="home"
+	aria-label="hero section"
+	class="relative h-screen px-7 md:h-auto md:px-12 lg:flex lg:h-screen lg:items-center lg:justify-center lg:gap-32 lg:px-36 lg:pt-16"
 >
-  <Icon
-    aria-label="mobile hero section light mode background"
-    name="mobile_bg_light"
-    class="absolute left-24 top-20 w-[250px] dark:hidden md:hidden"
-  />
-  <Icon
-    aria-label="mobile hero section dark mode background"
-    name="mobile_bg_dark"
-    class="absolute left-24 top-20 hidden w-[250px] dark:inline md:dark:hidden"
-  />
-  <Icon
-    aria-label="laptop hero section light mode background"
-    name="laptop_bg_light"
-    class="absolute right-16 top-52 hidden w-64 md:block lg:hidden"
-  />
-  <Icon
-    aria-label="laptop hero section dark mode background"
-    name="laptop_bg_dark"
-    class="absolute right-16 top-52 hidden w-64 md:dark:block lg:dark:hidden"
-  />
-  <div>
-    <h1
-      class="absolute left-7 top-48 font-righteous text-8xl dark:text-white md:left-12 md:top-36 md:dark:text-pearl-bush-500 lg:relative lg:left-[-0.5rem] lg:top-0"
-    >
-      Kelly<br class="lg:hidden" /> CHI
-    </h1>
+	<Icon
+		aria-label="mobile hero section light mode background"
+		name="mobile_bg_light"
+		class="absolute left-24 top-20 w-[250px] dark:hidden md:hidden"
+	/>
+	<Icon
+		aria-label="mobile hero section dark mode background"
+		name="mobile_bg_dark"
+		class="absolute left-24 top-20 hidden w-[250px] dark:inline md:dark:hidden"
+	/>
+	<Icon
+		aria-label="laptop hero section light mode background"
+		name="laptop_bg_light"
+		class="absolute right-16 top-52 hidden w-64 md:block lg:hidden"
+	/>
+	<Icon
+		aria-label="laptop hero section dark mode background"
+		name="laptop_bg_dark"
+		class="absolute right-16 top-52 hidden w-64 md:dark:block lg:dark:hidden"
+	/>
+	<div>
+		<h1
+			class="absolute left-7 top-48 font-righteous text-8xl dark:text-white md:left-12 md:top-36 md:dark:text-pearl-bush-500 lg:relative lg:left-[-0.5rem] lg:top-0"
+		>
+			Kelly<br class="lg:hidden" /> CHI
+		</h1>
 
-    <h2 class="pt-[25rem] text-3xl font-thin md:pt-[22rem] lg:pt-3">
-      {t('hero.title')}
-    </h2>
-    <p class="my-5 mr-5 text-lg font-thin md:max-w-[30ch] lg:max-w-[30ch]">
-      The joy of coding is about creating these virtual spaces and enchanting
-      them to behave as I would like. - Dan Abramov
-    </p>
-    <div class="my-8 flex items-center space-x-4 lg:my-0 lg:pt-10">
-      <a
-        href="https://github.com/KellyCHI22"
-        aria-label="Link to Kelly CHI's github page"
-        target="_blank"
-        class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
-      >
-        <Icon aria-label="github icon" name="mdi:github" class="w-9" />
-      </a>
-      <a
-        href="https://linkedin.com/in/kelly-chi-front-end"
-        aria-label="Link to Kelly CHI's linkedin page"
-        target="_blank"
-        class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
-      >
-        <Icon aria-label="linkedin icon" name="mdi:linkedin" class="w-9" />
-      </a>
-      <a
-        href="https://drive.google.com/file/d/1Y6meaZV0rPtWfsV1pB9ryO8y87pSdHci/view"
-        aria-label="Link to Kelly CHI's resume"
-        target="_blank"
-        class="grid h-[3.25rem] w-[3.25rem] place-items-center rounded-full bg-jet-500 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
-      >
-        <p class="font-extrabold">CV</p>
-      </a>
-      <a
-        href="mailto: chihsinting@gmail.com"
-        aria-label="Send email to Kelly CHI"
-        target="_blank"
-        class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
-      >
-        <Icon aria-label="emails icon" name="ph:envelope" class="w-9" />
-      </a>
-    </div>
-  </div>
-  <div>
-    <Icon
-      aria-label="desktop hero section light mode background"
-      name="desktop_bg_light"
-      class="hidden w-80 lg:block lg:dark:hidden"
-    />
-    <Icon
-      aria-label="desktop hero section light mode background"
-      name="desktop_bg_dark"
-      class="hidden w-80 lg:dark:block"
-    />
-  </div>
+		<h2 class="pt-[25rem] text-3xl font-thin md:pt-[22rem] lg:pt-3">
+			{t("hero.title")}
+		</h2>
+		<p class="my-5 mr-5 text-lg font-thin md:max-w-[30ch] lg:max-w-[30ch]">
+			The joy of coding is about creating these virtual spaces and enchanting
+			them to behave as I would like. - Dan Abramov
+		</p>
+		<div class="my-8 flex items-center space-x-4 lg:my-0 lg:pt-10">
+			<a
+				href="https://github.com/KellyCHI22"
+				aria-label="Link to Kelly CHI's github page"
+				target="_blank"
+				class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+			>
+				<Icon aria-label="github icon" name="mdi:github" class="w-9" />
+			</a>
+			<a
+				href="https://linkedin.com/in/kelly-chi-front-end"
+				aria-label="Link to Kelly CHI's linkedin page"
+				target="_blank"
+				class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+			>
+				<Icon aria-label="linkedin icon" name="mdi:linkedin" class="w-9" />
+			</a>
+			<a
+				href="https://drive.google.com/file/d/1FeuDSgNeqhc4cpneIENDOfHsqueV4N77/view"
+				aria-label="Link to Kelly CHI's resume"
+				target="_blank"
+				class="grid h-[3.25rem] w-[3.25rem] place-items-center rounded-full bg-jet-500 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+			>
+				<p class="font-extrabold">CV</p>
+			</a>
+			<a
+				href="mailto: chihsinting@gmail.com"
+				aria-label="Send email to Kelly CHI"
+				target="_blank"
+				class="inline-block rounded-full bg-jet-500 p-2 text-2xl text-pearl-bush-500 hover:bg-jet-400 dark:bg-pearl-bush-500 dark:text-jet-500 dark:hover:bg-pearl-bush-600"
+			>
+				<Icon aria-label="emails icon" name="ph:envelope" class="w-9" />
+			</a>
+		</div>
+	</div>
+	<div>
+		<Icon
+			aria-label="desktop hero section light mode background"
+			name="desktop_bg_light"
+			class="hidden w-80 lg:block lg:dark:hidden"
+		/>
+		<Icon
+			aria-label="desktop hero section light mode background"
+			name="desktop_bg_dark"
+			class="hidden w-80 lg:dark:block"
+		/>
+	</div>
 </section>

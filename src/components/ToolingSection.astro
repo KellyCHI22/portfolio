@@ -1,88 +1,88 @@
 ---
-import { Icon } from 'astro-icon';
-import { t } from 'i18next';
+import { Icon } from "astro-icon";
+import { t } from "i18next";
 
 type Tech = {
-  name: string;
-  icon: string;
+	name: string;
+	icon: string;
 };
 
 const technologies: Tech[] = [
-  {
-    name: 'JavaScript',
-    icon: 'simple-icons:javascript',
-  },
-  {
-    name: 'TypeScript',
-    icon: 'cib:typescript',
-  },
-  {
-    name: 'React',
-    icon: 'akar-icons:react-fill',
-  },
-  {
-    name: 'Redux',
-    icon: 'akar-icons:redux-fill',
-  },
-  {
-    name: 'Tailwind CSS',
-    icon: 'mdi:tailwind',
-  },
+	{
+		name: "JavaScript",
+		icon: "simple-icons:javascript",
+	},
+	{
+		name: "TypeScript",
+		icon: "cib:typescript",
+	},
+	{
+		name: "React",
+		icon: "akar-icons:react-fill",
+	},
+	{
+		name: "Vue",
+		icon: "akar-icons:vue-fill",
+	},
+	{
+		name: "Tailwind CSS",
+		icon: "mdi:tailwind",
+	},
 
-  {
-    name: 'Node.js',
-    icon: 'akar-icons:node-fill',
-  },
-  {
-    name: 'MongoDB',
-    icon: 'simple-icons:mongodb',
-  },
-  {
-    name: 'MySQL',
-    icon: 'fontisto:mysql',
-  },
-  {
-    name: 'Git',
-    icon: 'bi:git',
-  },
+	{
+		name: "Node.js",
+		icon: "akar-icons:node-fill",
+	},
+	{
+		name: "MongoDB",
+		icon: "simple-icons:mongodb",
+	},
+	{
+		name: "MySQL",
+		icon: "fontisto:mysql",
+	},
+	{
+		name: "Git",
+		icon: "bi:git",
+	},
 ];
 ---
 
 <section aria-label="tooling section" class="pt-12">
-  <h3
-    class="mx-auto mb-8 w-fit border-b-4 border-vermilion-500 font-righteous text-3xl dark:border-asparagus-500 lg:text-4xl"
-  >
-    {t('tooling.title')}
-  </h3>
-  <div
-    class="mx-5 grid grid-cols-3 gap-x-4 gap-y-6 md:mx-28 md:grid-cols-5 lg:mx-72 lg:gap-y-8"
-  >
-    {
-      technologies.map((tech) => (
-        <div class="flex flex-col items-center">
-          <div class="w-fit rounded-full bg-white p-5 text-jet-500 dark:bg-pearl-bush-500 dark:text-pearl-bush-500">
-            <Icon
-              aria-label={`${tech.name} icon`}
-              name={tech.icon}
-              class="w-10 dark:text-jet-500"
-            />
-          </div>
-          <p class="mt-2 text-center font-light leading-5">{tech.name}</p>
-        </div>
-      ))
-    }
-    <!-- for balence, only show on meduim/large screen -->
-    <div class="hidden flex-col items-center md:flex">
-      <div
-        class="w-fit rounded-full bg-white p-5 text-jet-500 dark:bg-pearl-bush-500 dark:text-pearl-bush-500"
-      >
-        <Icon
-          aria-label="sass icon"
-          name="akar-icons:sass-fill"
-          class="w-10 dark:text-jet-500"
-        />
-      </div>
-      <p class="mt-2 text-center font-light leading-5">SASS</p>
-    </div>
-  </div>
+	<h3
+		class="mx-auto mb-8 w-fit border-b-4 border-vermilion-500 font-righteous text-3xl dark:border-asparagus-500 lg:text-4xl"
+	>
+		{t("tooling.title")}
+	</h3>
+	<div
+		class="mx-5 grid grid-cols-3 gap-x-4 gap-y-6 md:mx-28 md:grid-cols-5 lg:mx-72 lg:gap-y-8"
+	>
+		{
+			technologies.map((tech) => (
+				<div class="flex flex-col items-center">
+					<div class="w-fit rounded-full bg-white p-5 text-jet-500 dark:bg-pearl-bush-500 dark:text-pearl-bush-500">
+						<Icon
+							aria-label={`${tech.name} icon`}
+							name={tech.icon}
+							class="w-10 dark:text-jet-500"
+						/>
+					</div>
+					<p class="mt-2 text-center font-light leading-5">{tech.name}</p>
+				</div>
+			))
+		}
+		<!-- for balence, only show on meduim/large screen -->
+		<div class="hidden flex-col items-center md:flex">
+			<div
+				class="w-fit rounded-full bg-white p-5 text-jet-500 dark:bg-pearl-bush-500 dark:text-pearl-bush-500"
+			>
+				<Icon
+					aria-label="sass icon"
+					name="file-icons:vite"
+					class="w-10 dark:text-jet-500"
+				/>
+			</div>
+			<p class="mt-2 text-center font-light leading-5">Vite</p>
+		</div>
+	</div>
 </section>
